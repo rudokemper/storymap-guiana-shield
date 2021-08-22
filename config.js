@@ -4,10 +4,10 @@ var config = {
     showMarkers: false,
     theme: 'dark',
     use3dTerrain: false,
-    title: 'Rainforest Conservation and Indigenous Territory in the Guiana Shield',
+    title: 'The Guiana Shield: One of the Last Wild Places on Earth',
     logo: 'images/act-logo.png',
     bookmarks: '<strong>Bookmarks</strong>:  <a href="#page3">Eastern Guiana Shield</a> | <a href="#page8">Kanashen (Guyana)</a> | <a href="#page10">Kwamalasamutu (Suriname)</a> | <a href="#page12">Camopi (French Guiana)</a> | <a href="#page14">Tumucumaque (Brazil)</a> | <a href="#page16">ACT\'s strategy</a>',
-	footer: 'Storytelling map by the Amazon Conservation Team, 2020. <a href="https://amazonteam.org/storytelling-maps/" target="_blank">More ACT storytelling maps</a> »<br><strong>Data sources:</strong> RAISG (Amazon watershed, protected areas, indigenous territories, mining concessions), GMD (mining concessions in Suriname), WWF (hydrology).<br><a href="https://amazonteam.org" class="fas fa-link" target="_blank"></a>&nbsp;<a href="https://amazonteam.org/storytelling-maps/" class="fas fa-map" target="_blank"></a>&nbsp;<a href="https://www.instagram.com/amazonconservationteam/?hl=en" class="fab fa-instagram" target="_blank"></a>&nbsp;<a href="http://twitter.com/AmazonTeamOrg" class="fab fa-twitter" target="_blank"></a>&nbsp;<a href="https://www.facebook.com/AmazonTeamOrg/" class="fab fa-facebook-f" target="_blank"></a>&nbsp;<a href="https://www.linkedin.com/company/amazon-conservation-team/" class="fab fa-linkedin" target="_blank"></a>&nbsp;<a href="https://www.youtube.com/channel/UCN7P8Z0eBlZrecVsAiNNj6w?view_as=subscriber" class="fab fa-youtube" target="_blank"></a>',
+	footer: '<strong>Bookmarks</strong>:  <a href="#page3">Eastern Guiana Shield</a> | <a href="#page8">Kanashen (Guyana)</a> | <a href="#page10">Kwamalasamutu (Suriname)</a> | <a href="#page12">Camopi (French Guiana)</a> | <a href="#page14">Tumucumaque (Brazil)</a> | <a href="#page16">ACT\'s strategy</a><br>Storytelling map by the Amazon Conservation Team, 2020. <a href="https://amazonteam.org/storytelling-maps/" target="_blank">More ACT storytelling maps</a> »<br><strong>Data sources:</strong> RAISG (Amazon watershed, protected areas, indigenous territories, mining concessions), GMD (mining concessions in Suriname), WWF (hydrology).<br><a href="https://amazonteam.org" class="fas fa-link" target="_blank"></a>&nbsp;<a href="https://amazonteam.org/storytelling-maps/" class="fas fa-map" target="_blank"></a>&nbsp;<a href="https://www.instagram.com/amazonconservationteam/?hl=en" class="fab fa-instagram" target="_blank"></a>&nbsp;<a href="http://twitter.com/AmazonTeamOrg" class="fab fa-twitter" target="_blank"></a>&nbsp;<a href="https://www.facebook.com/AmazonTeamOrg/" class="fab fa-facebook-f" target="_blank"></a>&nbsp;<a href="https://www.linkedin.com/company/amazon-conservation-team/" class="fab fa-linkedin" target="_blank"></a>&nbsp;<a href="https://www.youtube.com/channel/UCN7P8Z0eBlZrecVsAiNNj6w?view_as=subscriber" class="fab fa-youtube" target="_blank"></a>',
     chapters: [
         {
             id: 'page1',
@@ -74,7 +74,7 @@ var config = {
             id: 'page2',
             alignment: "left",
             hidden: false,            
-            title: 'South America\'s Guiana Shield: the \"Greenhouse of the World\"',
+            title: 'South America\'s Guiana Shield',
             image: 'images/roraima.jpg',
             description: 'Representing one of the most pristine rainforest landscapes in the world, the Guiana Shield stores roughly 18 percent of the world’s tropical forest carbon and 20 percent of the world’s fresh water. There are at three major water basins that flow through the Guiana Shield: the Orinoco basin (<span style="font-weight: bold; color: #6d2077; ">in purple</span>), the Amazon basin (<span style="font-weight: bold; color: #2b7777; ">in teal</span>), and a series of watersheds that flow into the Atlantic directly (<span style="font-weight: bold; color: #e56a54; ">in tangerine</span>).<br><br> A recent research paper has indicated that deforesting less than a third of the Guiana Shield would have catastrophic hydro-climactic impacts, resulting in substantial changes in the water cycle across the whole continent with negative impacts on biodiversity and ecosystem services (Bovolo et al. 2018). The Shield also comprises a biodiversity hotspot, home to thriving keystone species of biodiversity with an estimated 4,000 vertebrate species and 20,000 plant species known to science, 40% of which are endemic.',
             location: {
@@ -197,7 +197,7 @@ var config = {
             hidden: false,
             title: 'Indigenous Communities in the Guianas',
             image: 'images/indigenous.jpg',
-            description: 'The intact forest landscape of the Eastern Guiana Shield has long been the ancestral home of several indigenous communities, namely the Wai-Wai, Tarëno (or Trio), Wayana, and Wayampi. These communities have inhabited the region since before the arrival of Europeans who colonized the coastlines and established the present-day nation states with defined (if contested) sovereign borders. However, in the depths of the rainforest the indigenous communities travel across their traditional territory as they always have, and the state lines are largely fictional.',
+            description: 'The intact forest landscape of the Eastern Guiana Shield has long been the ancestral home of several indigenous communities, namely the Wai-Wai, Tarëno (or Trio), Wayana, and Wayampi. These communities have inhabited the region since before the arrival of Europeans who colonized the coastlines and established the present-day nation states with defined (if contested) sovereign borders. However, indigenous communities still occupy their traditional territories on either side of the national boundaries.',
             location: {
                 center: [-58, 2.5],
 				zoom: 6,
@@ -282,7 +282,7 @@ var config = {
             hidden: false,
             title: 'The Coming Decade: Emerging Threats in the 2020s',
             image: 'images/emerging.jpg',
-            description: 'In Guyana and Suriname, discoveries of major offshore oil deposits in the past year are expected to grow the national economies substantially (the IMF is predicting an unprecedented 86% increase for Guyana in 2020) and further entrench the extractivist political economic model, and could spell disastrous corruption that opens the door for inland exploration and concessions, as shown by recent turmoil in Guyana following its national elections (with Suriname’s elections on the horizon, slated to happen in May of this year). Meanwhile, in Brazil, the Bolsonaro administration has revived discussions of major infrastructure and mining projects that would penetrate deep into the eastern Guiana Shield, with both the expansion of the BR-163 highway leading into southern Suriname and the opening of a 4.6-million-hectare mining area called RENCA as possible outcomes of changes in the mining law slated for this year.',
+            description: 'The economic crisis that many countries are currently experiencing is expressed in the deepening of an extractive economic model, focused on mining and forest logging, to which is added the construction of roads. Meanwhile, in Brazil, the Bolsonaro administration has revived discussions of major infrastructure and mining projects that would penetrate deep into the eastern Guiana Shield, with both the expansion of the BR-163 highway leading into southern Suriname and the opening of a 4.6-million-hectare mining area called RENCA.',
             location: {
                 center: [-58, 2.5],
 				zoom: 6,
@@ -442,7 +442,7 @@ var config = {
             hidden: false,
             title: 'Guyana: Kanashen 1',
             image: 'images/kanashen-1.jpg',
-            description: 'Lorem ipsum.',
+            description: 'Kanashen has relatively intact forests located in the deep southern parts of the Rupununi region, Guyana. It contains the headwaters of the Essequibo River and is rich in biodiversity and ecosystem services. This area is owned by the community of less than 300 inhabitants mainly of Wai-Wai ancestry. In Kanashen, the people are almost fully dependent on the resources in the area for their sustenance and livelihood due to the remoteness of where they live. They still practice aspects of their unique culture, though after contact with Christian Missionaries.<br>Changes are taking place rapidly about their land, including increased mining activity in the vicinity of Erepoimo (Parabara), and urban expansion and infrastructure development in Region Nine (e.g. the Guyana-Brazil bridge across the Takatu River). these developments are considered as threats to their culture and biodiversity, especially since they were without legal title to the lands post 2004.',
             location: {
                 center: [-58.63977, 1.62527],
 				zoom: 16,
@@ -462,7 +462,7 @@ var config = {
             hidden: false,
             title: 'Guyana: Kanashen 2',
             image: 'images/kanashen-2.jpg',
-            description: 'Lorem ipsum.',
+            description: 'To secure their future at Kanashen, an application was made for Absolute Title to the entire Kanashen Indigenous District, an area of 648,567.2 hectares just about 3% of the country’s landmass, which was granted in 2004. In 2007, They made a decision to manage the lands, resources and culture for conservation and socio-economic development and declared their lands as the Kanashen Community Owned Conservation Area (KCOCA) under the Amerindian Act of 2006.<br>Managing and securing their natural resources for development was always a priority of the Wai-Wai at Kanashen. The presence of intact forests and abundance of wildlife in the area is an indication that they have been promoting and practicing very good environmental management. <br>In 2017, after many setbacks the KCOCA was added to the NPAS becoming the Largest protected area in the country and the only protected area owned legally by Indigenous people. This strengthened Formal protection of their lands and resources. The physical, ecological and cultural features offer great values and many opportunities for the Village, the Region, Guyana and the World at large. These values and opportunities include the provision of ecosystem goods and services, research, income generation and national security.',
             location: {
                 center: [-58.63977, 1.62527],
 				zoom: 10,
@@ -482,7 +482,7 @@ var config = {
             hidden: false,
             title: 'Suriname: Kwamalasamutu 1',
             image: 'images/kwamala.jpg',
-            description: 'Lorem ipsum.',
+            description: 'The Trio (or Tarëno or Tïrïyo) are a small indigenous tribe who live in the border area of Suriname and Brazil. In Brazil the group is generally known as Tïrïyo. In Suriname they call themselves as Tarëno. The Trio group in Suriname consists of a conglomeration of analogous subgroups and distinct Amerindian groups. Up to 12- 15 subtribes can be found at a given time in Kwamalasamutu.<br>Kwamalasamutu holds a distinct political and social position in the region as the home of the Paramount Chief of the Trios – Granman Asongo Alalaparu – and as the village with the largest population (600-800 people). To date, the Granman chose his grandson as the next in the line of succession that has been endorsed by all the trio authorities. The governance elements in common across the villages include besides the regional Granman, every village is led by a captain and then basjas (sub-captains). The political and socio-cultural life of villages is dominated by Evangelical (Baptist) churches composed entirely of local people (the missionaries are no longer present).',
             location: {
                 center: [-56.79493, 2.35534],
 				zoom: 15.5,
@@ -502,7 +502,7 @@ var config = {
             hidden: false,
             title: 'Suriname: Kwamalasamutu 2',
             image: 'images/kwamala.jpg',
-            description: 'Lorem ipsum.',
+            description: 'As the center of Trio leadership, Kwamalasamutu has great opportunities but also great challenges, common to the entire Trio territory. Today, the process of recognition of collective rights, absent in Surinamese legislation and within which is the right to land, is firmly advancing, but this implies that communities must be prepared for the exercise of these rights, that is, , to carry out an autonomous and sustainable management of the territory, to develop community management and planning instruments and to continue developing territorial control exercises, based on community monitoring initiatives, sustainable production, indigenous medicine and self-government, which have been developed with support of strategic partners, including ACT.',
             location: {
                 center: [-56.79493, 2.35534],
 				zoom: 13.5,
@@ -522,7 +522,7 @@ var config = {
             hidden: false,
             title: 'French Guiana: Camopi 1',
             image: 'images/kwamala.jpg',
-            description: 'Lorem ipsum.',
+            description: 'French Guiana is the largest French department, and the most forested with 96% of the territory covered by mostly primary rainforest. This department has a very low population density (4/sq km), and half of its +/- 300.000 inhabitants live along the coastline, or along the majestic rivers of the interior. This is also where reside the six tribes of indigenous people. They count around 10.000 persons, of which a 1000 are Wayana, and a 500 are Wayampi.<br>The French Guiana Amazonian Park, created in February 2007, covers 3.4 million hectares in Central and Southern French Guiana of intact moist tropical forest in the wider Amazon basin and Guyana shield. It is made up of a core zone (regulated area dedicated to environmental protection) of 2 million hectares, and a buffer zone (local development adapted to and respectful of local livelihoods) of 1,4 million ha. The French Guiana Amazonian Park is home to five municipalities (elected local authorities) and more than 20,000 inhabitants in its buffer zone: Amerindian communities (Wayana, Wayampi, Teko), Maroons (Aluku) and Creoles. It is adjacent to the Brazilian National Park of the Tumucumaque Mountains. Recognized as a major institution of French Guiana, the Amazonian Park maintains close ties with local and customary authorities.',
             location: {
                 center: [-53.13738, 3.01586],
 				zoom: 8.5,
@@ -542,7 +542,7 @@ var config = {
             hidden: false,
             title: 'French Guiana: Camopi 2',
             image: 'images/kwamala.jpg',
-            description: 'Lorem ipsum.',
+            description: 'In this landscape, the commune of Campoi is a good example of the challenges and strengths of this region: founded in 1969, the population of Camopi mostly belongs to the Way˜api and Teko indigenous groups, made up of approximately 1800 inhabitants and 250 households. In 2007, Campoi was included within the PAG, based on the principle of co-management between the park and local communities. The juxtaposition between indigenous territories and a protected area has served to face one of the most important threats present in this territory: illegal gold mining. Since the 1980s, when gold was discovered in the Camopi River, illegal miners arrived in the area and the villages of Vila Brasil and Ilha Bela were established, in front of the Camopi village, on the other side of the Oyapock River. Since then, cross-border dynamics has been a challenge for the protection and management of the territory, so that actions of control and territorial monitoring coordinated between the communities and the governments, hand in hand with opportunities for the development of sustainable productive alternatives, must continue. and get stronger.',
             location: {
                 center: [-52.34075, 3.16772],
 				zoom: 15,
@@ -562,7 +562,7 @@ var config = {
             hidden: false,
             title: 'Brazil: Tumucumaque 1',
             image: 'images/tumucumaque-1.jpg',
-            description: 'Lorem ipsum.',
+            description: 'In Brazil, the Guiana Shield covers a large territory in the north of the country, and comprehend four key large Indigenous Territories (ITs). From east to west, the IT Wajãpi, which is inhabited by the Indigenous People (IPs) with the same name, has a long history of contact, conflicts and resistance. The threats brought by its connectiveness to the road system are fought back by a strong Environmental and Territorial Management Plan (PGTA in the Portuguese acronym) and a consultation protocol (similar to a FPIC). The Tumucumaque and Paru D\'Este ITs, forms a complex of two contiguous ITs that are home to many different IPs, which can be superficially divided in the West Tumucumaque, in which the Trios are the majority, and East Tumucumaque + Paru D\'Este, where the Wayanas and Apalais are the major groups. Each of these "sides" are represented by a different IP organization (IPO), Moving forward to the West, the Wai Wais are distributed along three different ITs, the Nhamundá-Mapuera, Trombetas-Mapuera, and the Wai Wai IT.',
             location: {
                 center: [-56.04746, 0.67785],
 				zoom: 7.25,
@@ -582,7 +582,7 @@ var config = {
             hidden: false,
             title: 'Brazil: Tumucumaque 2',
             image: 'images/tumucumaque-2.jpg',
-            description: 'Lorem ipsum.',
+            description: 'The Trio (also known as Tiriyós in Portuguese) and Wayana people, officially occupy the Tumucumaque & Paru D’Este ITs, two contiguous territories that totalizes more than 4 million ha. Each of these people have their own IPOs, APITIKATXI (Association of the Tiriyós, Katxuyana and Txikyana IPs) and APIWA (Association of the Waianas and Apalai IPs). These associations represent IP distributed along two major river basins that cut through the ITs, with APITIKATXI representing communities of the villages along the “Rio Paru D’Oeste” (West Paru river) and its major tributary “Rio Marapi” river, and APIWA representing the communities of the villages along the “Rio Paru D’Este” (East Paru river).',
             location: {
                 center: [-56.55246, 1.04850],
 				zoom: 7.85,
