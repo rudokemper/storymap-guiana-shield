@@ -28,6 +28,9 @@
         a, a:hover, a:visited {
             color: #fff;
         }
+        h5 {
+            font-weight: normal;
+        }
         #map {
             top:0; 
             height: 100vh;
@@ -189,7 +192,13 @@
 	image.src = config.logo;
 	header.appendChild(image);
     }
-    
+
+    if (config.bookmarks) {
+    var bookmarksText = document.createElement('h5');
+    bookmarksText.innerHTML = config.bookmarks;
+	header.appendChild(bookmarksText);
+    }
+   
     if (config.subtitle) {
         var subtitleText = document.createElement('h2');
         subtitleText.innerText = config.subtitle;
