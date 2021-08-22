@@ -9,7 +9,7 @@ var config = {
 	footer: 'Storytelling map by the Amazon Conservation Team, 2020. <a href="https://amazonteam.org/storytelling-maps/" target="_blank">More ACT storytelling maps</a> »<br><strong>Data sources:</strong> RAISG (Amazon watershed, protected areas, indigenous territories, mining concessions), GMD (mining concessions in Suriname), WWF (hydrology).<br><a href="https://amazonteam.org" class="fas fa-link" target="_blank"></a>&nbsp;<a href="https://amazonteam.org/storytelling-maps/" class="fas fa-map" target="_blank"></a>&nbsp;<a href="https://www.instagram.com/amazonconservationteam/?hl=en" class="fab fa-instagram" target="_blank"></a>&nbsp;<a href="http://twitter.com/AmazonTeamOrg" class="fab fa-twitter" target="_blank"></a>&nbsp;<a href="https://www.facebook.com/AmazonTeamOrg/" class="fab fa-facebook-f" target="_blank"></a>&nbsp;<a href="https://www.linkedin.com/company/amazon-conservation-team/" class="fab fa-linkedin" target="_blank"></a>&nbsp;<a href="https://www.youtube.com/channel/UCN7P8Z0eBlZrecVsAiNNj6w?view_as=subscriber" class="fab fa-youtube" target="_blank"></a>',
     chapters: [
         {
-            id: 'page2a',
+            id: 'page1',
             alignment: "left",
             hidden: false,
             title: 'What is the Guiana Shield?',
@@ -70,7 +70,7 @@ var config = {
             ]
         },
         {
-            id: 'page2b',
+            id: 'page2',
             alignment: "left",
             hidden: false,            
             title: 'South America\'s Guiana Shield: the \"Greenhouse of the World\"',
@@ -276,7 +276,7 @@ var config = {
 			]
         },		
         {
-            id: 'page7',
+            id: 'page6',
             alignment: "left",
             hidden: false,
             title: 'The Coming Decade: Emerging Threats in the 2020s',
@@ -376,7 +376,7 @@ var config = {
 			]
         },
         {
-            id: 'page6',
+            id: 'page7',
             alignment: "left",
             hidden: false,
             title: 'Protected Areas and Indigenous Territories',
@@ -434,14 +434,174 @@ var config = {
                     opacity: 0
                 }					
 			]
-        },		
+        },
         {
             id: 'page8',
             alignment: "left",
             hidden: false,
+            title: 'Guyana: Kanashen 1',
+            image: 'images/kanashen-1.jpg',
+            description: 'Lorem ipsum.',
+            location: {
+                center: [-58.63977, 1.62527],
+				zoom: 16,
+				pitch: 0
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [           			
+			],
+            onChapterExit: [
+			]
+        },	      
+        {
+            id: 'page9',
+            alignment: "left",
+            hidden: false,
+            title: 'Guyana: Kanashen 2',
+            image: 'images/kanashen-2.jpg',
+            description: 'Lorem ipsum.',
+            location: {
+                center: [-58.63977, 1.62527],
+				zoom: 10,
+				pitch: 0
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [           			
+			],
+            onChapterExit: [
+			]
+        },
+        {
+            id: 'page10',
+            alignment: "left",
+            hidden: false,
+            title: 'Suriname: Kwamalasamutu 1',
+            image: 'images/kwamala.jpg',
+            description: 'Lorem ipsum.',
+            location: {
+                center: [-56.79493, 2.35534],
+				zoom: 15.5,
+				pitch: 0
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [           			
+			],
+            onChapterExit: [
+			]
+        },	
+        {
+            id: 'page11',
+            alignment: "left",
+            hidden: false,
+            title: 'Suriname: Kwamalasamutu 2',
+            image: 'images/kwamala.jpg',
+            description: 'Lorem ipsum.',
+            location: {
+                center: [-56.79493, 2.35534],
+				zoom: 13.5,
+				pitch: 0
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [           			
+			],
+            onChapterExit: [
+			]
+        },
+        {
+            id: 'page12',
+            alignment: "left",
+            hidden: false,
+            title: 'French Guiana: Camopi 1',
+            image: 'images/kwamala.jpg',
+            description: 'Lorem ipsum.',
+            location: {
+                center: [-53.13738, 3.01586],
+				zoom: 8.5,
+				pitch: 0
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [           			
+			],
+            onChapterExit: [
+			]
+        },
+        {
+            id: 'page13',
+            alignment: "left",
+            hidden: false,
+            title: 'French Guiana: Camopi 2',
+            image: 'images/kwamala.jpg',
+            description: 'Lorem ipsum.',
+            location: {
+                center: [-52.34075, 3.16772],
+				zoom: 15,
+				pitch: 0
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [           			
+			],
+            onChapterExit: [
+			]
+        },	 
+        {
+            id: 'page14',
+            alignment: "left",
+            hidden: false,
+            title: 'Brazil: Tumucumaque 1',
+            image: 'images/tumucumaque-1.jpg',
+            description: 'Lorem ipsum.',
+            location: {
+                center: [-56.04746, 0.67785],
+				zoom: 7.25,
+				pitch: 0
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [           			
+			],
+            onChapterExit: [
+			]
+        },	      
+        {
+            id: 'page15',
+            alignment: "left",
+            hidden: false,
+            title: 'Brazil: Tumucumaque 2',
+            image: 'images/tumucumaque-2.jpg',
+            description: 'Lorem ipsum.',
+            location: {
+                center: [-56.55246, 1.04850],
+				zoom: 7.85,
+				pitch: 0
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [           			
+			],
+            onChapterExit: [
+			]
+        },             	      	            	        		
+        {
+            id: 'page16',
+            alignment: "left",
+            hidden: false,
             title: 'ACT\'s Guiana Shield Conservation Strategy: A 30-Million-Hectare Transnational Protected Areas and Indigenous Territory Corridor',
             image: 'images/tepu.jpg',
-            description: 'ACT knows that a more just and verdant future is possible. 22 years ago, ACT was built on the conviction that tropical forests and the local communities that dwell within them are interdependent parts of one whole, and research has repeatedly shown reas where indigenous peoples have control over their lands have some of the lowest deforestation rates in the Amazon. If the indigenous groups of the eastern Guiana Shield have land management rights and the internal governance, cultural values, livelihood options, and monitoring capacities required to protect these lands as guardians of the rainforest, we can keep this region pristine, and help the indigenous cultures become even stronger, far into the future<br><br>ACT will undertake to create a 30-million-hectare biocultural corridor across the eastern Guiana Shield. This corridor will be managed sustainably by the indigenous peoples—the Trio, Wayana, Wayampi, and Wai-wai—as guardians of the rainforest and formally recognized and supported by governments to ensure that it is protected in perpetuity based on successful and proven methodologies pioneered by ACT.',
+            description: 'ACT knows that a more just and verdant future is possible. 25 years ago, ACT was built on the conviction that tropical forests and the local communities that dwell within them are interdependent parts of one whole, and research has repeatedly shown reas where indigenous peoples have control over their lands have some of the lowest deforestation rates in the Amazon. If the indigenous groups of the eastern Guiana Shield have land management rights and the internal governance, cultural values, livelihood options, and monitoring capacities required to protect these lands as guardians of the rainforest, we can keep this region pristine, and help the indigenous cultures become even stronger, far into the future<br><br>ACT will undertake to create a 30-million-hectare biocultural corridor across the eastern Guiana Shield. This corridor will be managed sustainably by the indigenous peoples—the Trio, Wayana, Wayampi, and Wai-wai—as guardians of the rainforest and formally recognized and supported by governments to ensure that it is protected in perpetuity based on successful and proven methodologies pioneered by ACT.',
             location: {
                 center: [-58, 2.5],
 				zoom: 6,
