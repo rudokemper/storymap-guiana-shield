@@ -555,7 +555,11 @@ var config = {
                 {
                     layer: 'majorrivers-dcf386',
                     opacity: 0.2
-                },       			
+                },     
+                {
+                    layer: 'majorrivers-dcf386 copy',
+                    opacity: 0.6
+                },  			
 			],
             onChapterExit: [
 			]
@@ -579,7 +583,11 @@ var config = {
                 {
                     layer: 'majorrivers-dcf386',
                     opacity: 0.0
-                },      			
+                },    
+                {
+                    layer: 'majorrivers-dcf386 copy',
+                    opacity: 0.0
+                },  			
 			],
             onChapterExit: [
 			]
@@ -603,7 +611,11 @@ var config = {
                 {
                     layer: 'majorrivers-dcf386',
                     opacity: 0.2
-                },           			
+                },        
+                {
+                    layer: 'majorrivers-dcf386 copy',
+                    opacity: 0.6
+                },   			
 			],
             onChapterExit: [
 			]
