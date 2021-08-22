@@ -415,7 +415,11 @@ var config = {
                 {
                     layer: 'capitals',
                     opacity: 1
-                }				
+                },
+                {
+                    layer: 'majorrivers-dcf386',
+                    opacity: 0.2
+                },				
 			],
             onChapterExit: [
 				{
@@ -451,7 +455,11 @@ var config = {
             mapAnimation: "flyTo",
             rotateAnimation: false,
             callback: "",
-            onChapterEnter: [           			
+            onChapterEnter: [     
+                {
+                    layer: 'majorrivers-dcf386',
+                    opacity: 0.0
+                },      			
 			],
             onChapterExit: [
 			]
@@ -471,7 +479,11 @@ var config = {
             mapAnimation: "flyTo",
             rotateAnimation: false,
             callback: "",
-            onChapterEnter: [           			
+            onChapterEnter: [     
+                {
+                    layer: 'majorrivers-dcf386',
+                    opacity: 0.2
+                },      			
 			],
             onChapterExit: [
 			]
@@ -491,7 +503,11 @@ var config = {
             mapAnimation: "flyTo",
             rotateAnimation: false,
             callback: "",
-            onChapterEnter: [           			
+            onChapterEnter: [   
+                {
+                    layer: 'majorrivers-dcf386',
+                    opacity: 0.0
+                },        			
 			],
             onChapterExit: [
 			]
@@ -505,13 +521,17 @@ var config = {
             description: 'As the center of Trio leadership, Kwamalasamutu has great opportunities but also great challenges, common to the entire Trio territory. Today, the process of recognition of collective rights, absent in Surinamese legislation and within which is the right to land, is firmly advancing, but this implies that communities must be prepared for the exercise of these rights, that is, to carry out an autonomous and sustainable management of the territory, to develop community management and planning instruments and to continue developing territorial control exercises, based on community monitoring initiatives, sustainable production, indigenous medicine and self-government, which have been developed with support of strategic partners, including ACT.',
             location: {
                 center: [-56.79493, 2.35534],
-				zoom: 13.5,
+				zoom: 13,
 				pitch: 0
             },
             mapAnimation: "flyTo",
             rotateAnimation: false,
             callback: "",
-            onChapterEnter: [           			
+            onChapterEnter: [  
+                {
+                    layer: 'majorrivers-dcf386',
+                    opacity: 0.2
+                },         			
 			],
             onChapterExit: [
 			]
@@ -531,7 +551,11 @@ var config = {
             mapAnimation: "flyTo",
             rotateAnimation: false,
             callback: "",
-            onChapterEnter: [           			
+            onChapterEnter: [    
+                {
+                    layer: 'majorrivers-dcf386',
+                    opacity: 0.2
+                },       			
 			],
             onChapterExit: [
 			]
@@ -551,7 +575,11 @@ var config = {
             mapAnimation: "flyTo",
             rotateAnimation: false,
             callback: "",
-            onChapterEnter: [           			
+            onChapterEnter: [     
+                {
+                    layer: 'majorrivers-dcf386',
+                    opacity: 0.0
+                },      			
 			],
             onChapterExit: [
 			]
@@ -564,14 +592,18 @@ var config = {
             image: 'images/tumucumaque-1.jpg',
             description: 'In Brazil, the Guiana Shield covers a large territory in the north of the country, and comprehend four key large Indigenous Territories (ITs). From east to west, the IT Wajãpi, which is inhabited by the Indigenous People (IPs) with the same name, has a long history of contact, conflicts and resistance. The threats brought by its connectiveness to the road system are fought back by a strong Environmental and Territorial Management Plan (PGTA in the Portuguese acronym) and a consultation protocol (similar to a FPIC). The Tumucumaque and Paru D\'Este ITs, forms a complex of two contiguous ITs that are home to many different IPs, which can be superficially divided in the West Tumucumaque, in which the Trios are the majority, and East Tumucumaque + Paru D\'Este, where the Wayanas and Apalais are the major groups. Each of these "sides" are represented by a different IP organization (IPO), Moving forward to the West, the Wai Wais are distributed along three different ITs, the Nhamundá-Mapuera, Trombetas-Mapuera, and the Wai Wai IT.<br><br><em>Photo credit: Evandro Benardi</em>',
             location: {
-                center: [-56.04746, 0.67785],
-				zoom: 7.25,
+                center: [-59.04746, 0.67785],
+				zoom: 6.4,
 				pitch: 0
             },
             mapAnimation: "flyTo",
             rotateAnimation: false,
             callback: "",
-            onChapterEnter: [           			
+            onChapterEnter: [
+                {
+                    layer: 'majorrivers-dcf386',
+                    opacity: 0.2
+                },           			
 			],
             onChapterExit: [
 			]
@@ -584,7 +616,7 @@ var config = {
             image: 'images/tumucumaque-2.jpg',
             description: 'The Trio (also known as Tiriyós in Portuguese) and Wayana people, officially occupy the Tumucumaque & Paru D’Este ITs, two contiguous territories that totalizes more than 4 million ha. Each of these people have their own IPOs, APITIKATXI (Association of the Tiriyós, Katxuyana and Txikyana IPs) and APIWA (Association of the Waianas and Apalai IPs). These associations represent IP distributed along two major river basins that cut through the ITs, with APITIKATXI representing communities of the villages along the “Rio Paru D’Oeste” (West Paru river) and its major tributary “Rio Marapi” river, and APIWA representing the communities of the villages along the “Rio Paru D’Este” (East Paru river).<br><br><em>Photo credit: Evandro Benardi</em>',
             location: {
-                center: [-56.55246, 1.04850],
+                center: [-56.55246, 1.34850],
 				zoom: 7.85,
 				pitch: 0
             },
