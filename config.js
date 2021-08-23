@@ -319,15 +319,7 @@ var config = {
                 {
                     layer: 'roads-65by1c',
                     opacity: 0.6
-                },
-				{
-                    layer: 'guianas-protectedareas-74v0na',
-                    opacity: 0.4
-                },
-                {
-                    layer: 'indigenousterritories-2yjnwi',
-                    opacity: 0.4
-                },				
+                },		
                 {
                     layer: 'countries',
                     opacity: 0
@@ -352,14 +344,6 @@ var config = {
                 },
                 {
                     layer: 'roads-65by1c',
-                    opacity: 0
-                },
-				{
-                    layer: 'guianas-protectedareas-74v0na',
-                    opacity: 0
-                },
-                {
-                    layer: 'indigenousterritories-2yjnwi',
                     opacity: 0
                 },
                 {
@@ -414,11 +398,11 @@ var config = {
                 },
                 {
                     layer: 'capitals',
-                    opacity: 1
+                    opacity: 0
                 },
                 {
                     layer: 'majorrivers-dcf386',
-                    opacity: 0.2
+                    opacity: 0.6
                 },				
 			],
             onChapterExit: [
@@ -466,11 +450,11 @@ var config = {
                 },                 
 				{
                     layer: 'guianas-protectedareas-74v0na',
-                    opacity: 1
+                    opacity: 0.4
                 },
                 {
                     layer: 'indigenousterritories-2yjnwi',
-                    opacity: 1
+                    opacity: 0.4
                 },
                 {
                     layer: 'countries',
@@ -478,11 +462,11 @@ var config = {
                 },
                 {
                     layer: 'capitals',
-                    opacity: 1
+                    opacity: 0
                 },
                 {
                     layer: 'majorrivers-dcf386',
-                    opacity: 0.2
+                    opacity: 0.6
                 },				
 			],
             onChapterExit: [
@@ -523,10 +507,11 @@ var config = {
                 {
                     layer: 'majorrivers-dcf386',
                     opacity: 0.0
-                },      			
+                },      		 	
 			],
             onChapterExit: [
-			]
+            ]
+            
         },	      
         {
             id: 'page9',
@@ -536,8 +521,8 @@ var config = {
             image: 'images/kanashen-2.jpg',
             description: 'To secure their future at Kanashen, an application was made for Absolute Title to the entire Kanashen Indigenous District, an area of 648,567.2 hectares just about 3% of the country’s landmass, which was granted in 2004. In 2007, They made a decision to manage the lands, resources and culture for conservation and socio-economic development and declared their lands as the Kanashen Community Owned Conservation Area (KCOCA) under the Amerindian Act of 2006.<br><br>Managing and securing their natural resources for development was always a priority of the Wai-Wai at Kanashen. The presence of intact forests and abundance of wildlife in the area is an indication that they have been promoting and practicing very good environmental management.<br><br>In 2017, after many setbacks the KCOCA was added to the NPAS becoming the Largest protected area in the country and the only protected area owned legally by Indigenous people. This strengthened Formal protection of their lands and resources. The physical, ecological and cultural features offer great values and many opportunities for the Village, the Region, Guyana and the World at large. These values and opportunities include the provision of ecosystem goods and services, research, income generation and national security.',
             location: {
-                center: [-58.63977, 1.62527],
-				zoom: 10,
+                center: [-58.96259, 1.50747],
+				zoom: 9,
 				pitch: 0
             },
             mapAnimation: "flyTo",
@@ -547,9 +532,25 @@ var config = {
                 {
                     layer: 'majorrivers-dcf386',
                     opacity: 0.2
-                },      			
+                },    
+                {
+                    layer: 'kanashen',
+                    opacity: 1
+                }, 
+                {
+                    layer: 'kanashen-label',
+                    opacity: 1
+                },   			
 			],
             onChapterExit: [
+                {
+                    layer: 'kanashen',
+                    opacity: 0
+                }, 
+                {
+                    layer: 'kanashen-label',
+                    opacity: 0
+                }, 
 			]
         },
         {
@@ -571,7 +572,7 @@ var config = {
                 {
                     layer: 'majorrivers-dcf386',
                     opacity: 0.0
-                },        			
+                },   	       			
 			],
             onChapterExit: [
 			]
@@ -591,11 +592,7 @@ var config = {
             mapAnimation: "flyTo",
             rotateAnimation: false,
             callback: "",
-            onChapterEnter: [  
-                {
-                    layer: 'majorrivers-dcf386',
-                    opacity: 0.2
-                },         			
+            onChapterEnter: [      			
 			],
             onChapterExit: [
 			]
@@ -608,8 +605,8 @@ var config = {
             image: 'images/kwamala.jpg',
             description: 'French Guiana is the largest French department, and the most forested with 96% of the territory covered by mostly primary rainforest. This department has a very low population density (4/sq km), and half of its +/- 300.000 inhabitants live along the coastline, or along the majestic rivers of the interior. This is also where reside the six tribes of indigenous people. They count around 10.000 persons, of which a 1000 are Wayana, and a 500 are Wayampi.<br>The French Guiana Amazonian Park, created in February 2007, covers 3.4 million hectares in Central and Southern French Guiana of intact moist tropical forest in the wider Amazon basin and Guyana shield. It is made up of a core zone (regulated area dedicated to environmental protection) of 2 million hectares, and a buffer zone (local development adapted to and respectful of local livelihoods) of 1,4 million ha. The French Guiana Amazonian Park is home to five municipalities (elected local authorities) and more than 20,000 inhabitants in its buffer zone: Amerindian communities (Wayana, Wayampi, Teko), Maroons (Aluku) and Creoles. It is adjacent to the Brazilian National Park of the Tumucumaque Mountains. Recognized as a major institution of French Guiana, the Amazonian Park maintains close ties with local and customary authorities.',
             location: {
-                center: [-53.13738, 3.01586],
-				zoom: 8.5,
+                center: [-53.43738, 3.3],
+				zoom: 8,
 				pitch: 0
             },
             mapAnimation: "flyTo",
@@ -617,15 +614,47 @@ var config = {
             callback: "",
             onChapterEnter: [    
                 {
-                    layer: 'majorrivers-dcf386',
-                    opacity: 0.2
-                },     
+                    layer: 'parc-amazonien-label',
+                    opacity: 1
+                },  
+                {
+                    layer: 'parc-amazonien',
+                    opacity: 1
+                },  
+                {
+                    layer: 'parc-amazonien-TI',
+                    opacity: 1
+                },                  
                 {
                     layer: 'majorrivers-dcf386 copy',
                     opacity: 0.6
-                },  			
+                },
+                {
+                    layer: 'majorrivers-dcf386',
+                    opacity: 0.6
+                },		
 			],
             onChapterExit: [
+                {
+                    layer: 'parc-amazonien-label',
+                    opacity: 0
+                },                  
+                {
+                    layer: 'parc-amazonien',
+                    opacity: 0
+                },  
+                {
+                    layer: 'parc-amazonien-TI',
+                    opacity: 0
+                }, 
+                {
+                    layer: 'majorrivers-dcf386 copy',
+                    opacity: 0
+                },
+                {
+                    layer: 'majorrivers-dcf386',
+                    opacity: 0
+                },
 			]
         },
         {
@@ -634,7 +663,7 @@ var config = {
             hidden: false,
             title: 'French Guiana: Camopi 2',
             image: 'images/kwamala.jpg',
-            description: 'In this landscape, the commune of Campoi is a good example of the challenges and strengths of this region: founded in 1969, the population of Camopi mostly belongs to the Way˜api and Teko indigenous groups, made up of approximately 1800 inhabitants and 250 households. In 2007, Campoi was included within the PAG, based on the principle of co-management between the park and local communities. The juxtaposition between indigenous territories and a protected area has served to face one of the most important threats present in this territory: illegal gold mining. Since the 1980s, when gold was discovered in the Camopi River, illegal miners arrived in the area and the villages of Vila Brasil and Ilha Bela were established, in front of the Camopi village, on the other side of the Oyapock River. Since then, cross-border dynamics has been a challenge for the protection and management of the territory, so that actions of control and territorial monitoring coordinated between the communities and the governments, hand in hand with opportunities for the development of sustainable productive alternatives, must continue. and get stronger.',
+            description: 'In this landscape, the commune of Campoi is a good example of the challenges and strengths of this region: founded in 1969, the population of Camopi mostly belongs to the Wayãpi and Teko indigenous groups, made up of approximately 1800 inhabitants and 250 households. In 2007, Campoi was included within the PAG, based on the principle of co-management between the park and local communities. The juxtaposition between indigenous territories and a protected area has served to face one of the most important threats present in this territory: illegal gold mining. Since the 1980s, when gold was discovered in the Camopi River, illegal miners arrived in the area and the villages of Vila Brasil and Ilha Bela were established, in front of the Camopi village, on the other side of the Oyapock River. Since then, cross-border dynamics has been a challenge for the protection and management of the territory, so that actions of control and territorial monitoring coordinated between the communities and the governments, hand in hand with opportunities for the development of sustainable productive alternatives, must continue. and get stronger.',
             location: {
                 center: [-52.33275, 3.16772],
 				zoom: 15.5,
@@ -645,15 +674,27 @@ var config = {
             callback: "",
             onChapterEnter: [     
                 {
+                    layer: 'camopi',
+                    opacity: 1
+                },    
+                {
                     layer: 'majorrivers-dcf386',
-                    opacity: 0.0
+                    opacity: 0
                 },    
                 {
                     layer: 'majorrivers-dcf386 copy',
-                    opacity: 0.0
-                },  			
+                    opacity: 0
+                },  
+                {
+                    layer: 'capitals',
+                    opacity: 1
+                },			
 			],
             onChapterExit: [
+                {
+                    layer: 'camopi',
+                    opacity: 0
+                },                 
 			]
         },	 
         {
@@ -674,14 +715,34 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'majorrivers-dcf386',
-                    opacity: 0.2
+                    opacity: 0.6
                 },        
                 {
                     layer: 'majorrivers-dcf386 copy',
                     opacity: 0.6
-                },   			
+                },  
+                {
+                    layer: 'brasil-ti',
+                    opacity: 1
+                },
+                {
+                    layer: 'brasil-ti-label',
+                    opacity: 1
+                },       
+                {
+                    layer: 'capitals',
+                    opacity: 0
+                },            			
 			],
             onChapterExit: [
+                {
+                    layer: 'brasil-ti',
+                    opacity: 0
+                },
+                {
+                    layer: 'brasil-ti-label',
+                    opacity: 0
+                },
 			]
         },	      
         {
@@ -692,16 +753,32 @@ var config = {
             image: 'images/tumucumaque-2.jpg',
             description: 'The Trio (also known as Tiriyós in Portuguese) and Wayana people, officially occupy the Tumucumaque & Paru D’Este ITs, two contiguous territories that totalizes more than 4 million ha. Each of these people have their own IPOs, APITIKATXI (Association of the Tiriyós, Katxuyana and Txikyana IPs) and APIWA (Association of the Waianas and Apalai IPs). These associations represent IP distributed along two major river basins that cut through the ITs, with APITIKATXI representing communities of the villages along the “Rio Paru D’Oeste” (West Paru river) and its major tributary “Rio Marapi” river, and APIWA representing the communities of the villages along the “Rio Paru D’Este” (East Paru river).<br><br><em>Photo credit: Evandro Benardi</em>',
             location: {
-                center: [-56.55246, 1.34850],
+                center: [-55.85246, 1.34850],
 				zoom: 7.85,
 				pitch: 0
             },
             mapAnimation: "flyTo",
             rotateAnimation: false,
             callback: "",
-            onChapterEnter: [           			
+            onChapterEnter: [    
+                {
+                    layer: 'brasil-ti',
+                    opacity: 1
+                },
+                {
+                    layer: 'brasil-ti-label',
+                    opacity: 1
+                },        			
 			],
             onChapterExit: [
+                {
+                    layer: 'brasil-ti',
+                    opacity: 0
+                },
+                {
+                    layer: 'brasil-ti-label',
+                    opacity: 0
+                }, 
 			]
         },             	      	            	        		
         {
