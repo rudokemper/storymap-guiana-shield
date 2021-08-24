@@ -302,8 +302,11 @@
             var story = document.createElement('p');
             story.innerHTML = record.description;
             chapter.appendChild(story);
+            var returntotop = document.createElement('p');
+            returntotop.innerHTML = '<a href="#header">Back to top</a>';
+            chapter.appendChild(returntotop);
         }
-    
+
         container.setAttribute('id', record.id);
         container.classList.add('step');
         if (idx === 0) {

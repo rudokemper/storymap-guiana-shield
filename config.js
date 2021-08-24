@@ -15,7 +15,7 @@ var config = {
             hidden: false,
             title: 'What is the Guiana Shield?',
             image: 'images/colombia-mesa.jpg',
-            description: 'The Guiana Shield is a 1.7 billion-year-old geological formation home to lowland and submontane forests and high flat-topped peak mountains known as tepuis, located along the northern coast of South America. As a whole, the Guiana Shield covers 270 million hectares and encompasses French Guiana, Suriname, Guyana, Venezuela, and parts of Colombia and Brazil. The Guiana Shield comprises 26% of Amazonia in total (overlap with the Amazon river watershed shown here in <span style="font-weight: bold; color: #004ca8; ">blue</span>). Home to both significant biological and cultural diversity, it is described by the United Nations Development Programme (UNDP) as being of “regional and global significance.</div>',
+            description: 'The Guiana Shield is a 1.7 billion-year-old geological formation home to lowland and submontane forests and high flat-topped peak mountains known as tepuis, located along the northern coast of South America. As a whole, the Guiana Shield covers 270 million hectares and encompasses French Guiana, Suriname, Guyana, Venezuela, and parts of Colombia and Brazil. The Guiana Shield comprises 26% of Amazonia in total (overlap with the Amazon river watershed shown here in <span style="font-weight: bold; color: #004ca8; ">blue</span>). Home to both significant biological and cultural diversity, it is described by the United Nations Development Programme (UNDP) as being of “regional and global significance.',
             location: {
                 center: [-68, -1], 
 				zoom: 4,
