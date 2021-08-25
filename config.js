@@ -471,7 +471,7 @@ var config = {
                 {
                     layer: 'case-studies copy',
                     opacity: 1
-                },				
+                },		
 			],
             onChapterExit: [            
 				{
@@ -901,7 +901,15 @@ var config = {
                 {         
                     layer: 'brazil-villages copy',
                     opacity: 1
-                },        	
+                },  
+                {
+                    layer: 'brazil-villages-stroke',
+                    opacity: 1
+                },    
+                {         
+                    layer: 'brazil-villages-stroke copy',
+                    opacity: 1
+                },                        	
                 {
                     layer: 'brazil-villages-label',
                     opacity: 1
@@ -931,6 +939,14 @@ var config = {
                 },    
                 {         
                     layer: 'brazil-villages copy',
+                    opacity: 0
+                }, 
+                {
+                    layer: 'brazil-villages-stroke',
+                    opacity: 0
+                },    
+                {         
+                    layer: 'brazil-villages-stroke copy',
                     opacity: 0
                 },        	
                 {
