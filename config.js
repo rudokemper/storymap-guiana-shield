@@ -69,9 +69,9 @@ var config = {
                 {
                     layer: 'mapbox-terrain-rgb',
                     opacity: 0
-                },	
+                }	
 			],
-            onChapterExit: [			
+            onChapterExit: [	
             ]
         },
         {
@@ -130,7 +130,7 @@ var config = {
                 {
                     layer: 'capitals',
                     opacity: 0
-                }				
+                },		
 			],
             onChapterExit: [			
             ]
