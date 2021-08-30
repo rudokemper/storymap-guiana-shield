@@ -7,7 +7,7 @@ var config = {
     title: 'The Guiana Shield: One of the Last Wild Places on Earth',
     logo: 'images/act-logo.png',
     bookmarks: '<strong>Bookmarks</strong>: <a href="#page1">Guiana Shield overview</a> | <a href="#page3">Eastern Guiana Shield</a> | <a href="#page8">Kanashen (Guyana)</a> | <a href="#page10">Kwamalasamutu (Suriname)</a> | <a href="#page12">Camopi (French Guiana)</a> | <a href="#page14">Tumucumaque (Brazil)</a> | <a href="#page16">ACT\'s strategy</a><div id="rotate-mobile"><em>For optimal viewing of this storytelling map on mobile, rotate your device to a horizontal orientation.</em><br><br><img src="images/device.png">',
-	footer: '<strong>Bookmarks</strong>: <a href="#page1">Guiana Shield overview</a> | <a href="#page3">Eastern Guiana Shield</a> | <a href="#page8">Kanashen (Guyana)</a> | <a href="#page10">Kwamalasamutu (Suriname)</a> | <a href="#page12">Camopi (French Guiana)</a> | <a href="#page14">Tumucumaque (Brazil)</a> | <a href="#page16">ACT\'s strategy</a><br><br>Storytelling map by the Amazon Conservation Team, 2021. <a href="https://amazonteam.org/storytelling-maps/" target="_blank">More ACT storytelling maps</a> »<br><br><strong>Data sources:</strong> RAISG (Amazon watershed, protected areas, indigenous territories, mining concessions), GMD (mining concessions in Suriname), WWF (hydrology).<br><br><a href="https://amazonteam.org" class="fas fa-link" target="_blank"></a>&nbsp;<a href="https://amazonteam.org/storytelling-maps/" class="fas fa-map" target="_blank"></a>&nbsp;<a href="https://www.instagram.com/amazonconservationteam/?hl=en" class="fab fa-instagram" target="_blank"></a>&nbsp;<a href="http://twitter.com/AmazonTeamOrg" class="fab fa-twitter" target="_blank"></a>&nbsp;<a href="https://www.facebook.com/AmazonTeamOrg/" class="fab fa-facebook-f" target="_blank"></a>&nbsp;<a href="https://www.linkedin.com/company/amazon-conservation-team/" class="fab fa-linkedin" target="_blank"></a>&nbsp;<a href="https://www.youtube.com/channel/UCN7P8Z0eBlZrecVsAiNNj6w?view_as=subscriber" class="fab fa-youtube" target="_blank"></a>',
+	footer: '<strong>Bookmarks</strong>: <a href="#page1">Guiana Shield overview</a> | <a href="#page3">Eastern Guiana Shield</a> | <a href="#page8">Kanashen (Guyana)</a> | <a href="#page10">Kwamalasamutu (Suriname)</a> | <a href="#page12">Camopi (French Guiana)</a> | <a href="#page14">Tumucumaque (Brazil)</a> | <a href="#page16">ACT\'s strategy</a><br><br><strong>Data sources:</strong> RAISG (Amazon watershed, protected areas, indigenous territories, mining concessions), GMD (mining concessions in Suriname), WWF (hydrology).<br><br>Storytelling map by the Amazon Conservation Team, 2021. <a href="https://amazonteam.org/storytelling-maps/" target="_blank">More ACT storytelling maps</a> »<br><br>Built with support from:<br><a href="https://www.dobecology.nl/" target="_blank"><img src="images/dob-ecology.png" style="margin-top: 5px;"></a><br><br><a href="https://amazonteam.org" class="fas fa-link" target="_blank"></a>&nbsp;<a href="https://amazonteam.org/storytelling-maps/" class="fas fa-map" target="_blank"></a>&nbsp;<a href="https://www.instagram.com/amazonconservationteam/?hl=en" class="fab fa-instagram" target="_blank"></a>&nbsp;<a href="http://twitter.com/AmazonTeamOrg" class="fab fa-twitter" target="_blank"></a>&nbsp;<a href="https://www.facebook.com/AmazonTeamOrg/" class="fab fa-facebook-f" target="_blank"></a>&nbsp;<a href="https://www.linkedin.com/company/amazon-conservation-team/" class="fab fa-linkedin" target="_blank"></a>&nbsp;<a href="https://www.youtube.com/channel/UCN7P8Z0eBlZrecVsAiNNj6w?view_as=subscriber" class="fab fa-youtube" target="_blank"></a>',
     chapters: [
         {
             id: 'page1',
@@ -69,9 +69,25 @@ var config = {
                 {
                     layer: 'mapbox-terrain-rgb',
                     opacity: 0
-                }	
+                },
+                {
+                    layer: 'forest-cover-loss',
+                    opacity: 0
+                },
+                {
+                    layer: 'biomass',
+                    opacity: 0
+                }
 			],
-            onChapterExit: [	
+            onChapterExit: [
+                {
+                    layer: 'forest-cover-loss',
+                    opacity: 0
+                },
+                {
+                    layer: 'biomass',
+                    opacity: 0
+                }
             ]
         },
         {
@@ -132,7 +148,23 @@ var config = {
                     opacity: 0
                 },		
 			],
-            onChapterExit: [			
+            onChapterExit: [	
+                {
+                    layer: 'watersheds2-26pedv',
+                    opacity: 0
+                },
+                {
+                    layer: 'watersheds-amazon',
+                    opacity: 0
+                },
+                {
+                    layer: 'watersheds2-26pedv copy 1',
+                    opacity: 0
+                },					
+                {
+                    layer: 'watersheds2-26pedv copy 2',
+                    opacity: 0
+                },		
             ]
         },		
         {
@@ -190,9 +222,17 @@ var config = {
                 {
                     layer: 'capitals',
                     opacity: 1
+                },
+                {
+                    layer: 'biomass',
+                    opacity: 0.8
                 }
 			],
-            onChapterExit: [			
+            onChapterExit: [
+                {
+                    layer: 'biomass',
+                    opacity: 0
+                }			
             ]
         },
         {
@@ -226,7 +266,7 @@ var config = {
                 {
                     layer: 'capitals',
                     opacity: 1
-                }				
+                }	
 			],
             onChapterExit: [
 				{
@@ -236,7 +276,7 @@ var config = {
 				{
                     layer: 'indigenouscommunities-0eagv0',
                     opacity: 0
-                }				
+                }		
 			]
         },
         {
@@ -267,7 +307,11 @@ var config = {
                 {
                     layer: 'capitals',
                     opacity: 0
-                }					
+                },
+                {
+                    layer: 'forest-cover-loss',
+                    opacity: 1
+                }				
 			],
             onChapterExit: [
                 {
@@ -277,7 +321,11 @@ var config = {
                 {
                     layer: 'roads',
                     opacity: 0
-                }					
+                },
+                {
+                    layer: 'forest-cover-loss',
+                    opacity: 0
+                },				
 			]
         },		
         {
@@ -331,7 +379,11 @@ var config = {
                 {
                     layer: 'capitals',
                     opacity: 0
-                }					
+                },
+                {
+                    layer: 'forest-cover-loss',
+                    opacity: 1
+                },				
 			],
             onChapterExit: [
 				{
@@ -361,7 +413,11 @@ var config = {
 				{
                     layer: 'special-renca',
                     opacity: 0
-                }					
+                },
+                {
+                    layer: 'forest-cover-loss',
+                    opacity: 0
+                },				
 			]
         },
         {
