@@ -172,7 +172,7 @@ var config = {
             alignment: "left",
             hidden: false,
             title: 'The Eastern Guiana Shield',
-            image: 'images/kasikasima.jpg',
+            image: 'images/ebbatop.jpg',
             description: 'Along the eastern area of the Guiana Shield, there thrives a region of more than 30 million hectares of intact rainforest landscape, its ecosystems largely untouched and its vibrant indigenous cultures still active. Described as the eastern Guiana Shield, its boundaries encompass the southern reaches of Guyana, Suriname, and French Guiana, crossing into northern Brazil. This region has one of the highest rates of forest cover in the globe (with French Guiana at 95% and Suriname at 93% being among the highest in the world), houses a substantial quantity of carbon sequestration, and contains half of all of the fresh water in the entire Shield.',
             location: {
                 center: [-57, 2.5],
@@ -277,6 +277,70 @@ var config = {
                     layer: 'indigenouscommunities-0eagv0',
                     opacity: 0
                 }		
+			]
+        },
+        {
+            id: 'page7',
+            alignment: "left",
+            hidden: false,
+            title: 'Protected Areas and Indigenous Territories',
+            image: 'images/kwamala.jpg',
+            description: 'In the eastern Guiana Shield, a significant opportunity exists to create a transnational corridor of protected areas (<span style="font-weight: bold; color: #a5ff75;">in green</span>) and indigenous territories (<span style="font-weight: bold; color: #ffaa00;">in orange</span>) to help keep the tropical forest landscapes there intact and thriving. Along the northern border of Brazil, large areas like the Tumucumaque Indigenous Park, the Tumucumaque Mountains National Park, and the Trombetas-Mapuera Indigenous Territory are met by adjacent protected areas in neighboring French Guiana (Parc Amazonien de Guyane) and Guyana (Kanashen COCA). However, Suriname has neither designated indigenous reserves nor instituted headwater protections in the south, and will not do so until new protected areas legislation is ratified by law.',
+            location: {
+                center: [-57, 2.5],
+				zoom: 6,
+				pitch: 0
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [           
+				{
+                    layer: 'ti-label',
+                    opacity: 1
+                },   				
+				{
+                    layer: 'prot-label',
+                    opacity: 1
+                },                 
+				{
+                    layer: 'guianas-protectedareas-74v0na',
+                    opacity: 1
+                },
+                {
+                    layer: 'indigenousterritories-2yjnwi',
+                    opacity: 1
+                },
+                {
+                    layer: 'countries',
+                    opacity: 1
+                },
+                {
+                    layer: 'capitals',
+                    opacity: 0
+                },
+                {
+                    layer: 'majorrivers-dcf386',
+                    opacity: 0.6
+                },				
+			],
+            onChapterExit: [
+				{
+                    layer: 'ti-label',
+                    opacity: 0
+                },  				
+				{
+                    layer: 'prot-label',
+                    opacity: 0
+                },                
+				{
+                    layer: 'guianas-protectedareas-74v0na',
+                    opacity: 0
+                },
+                {
+                    layer: 'indigenousterritories-2yjnwi',
+                    opacity: 0
+                }					
 			]
         },
         {
@@ -421,70 +485,6 @@ var config = {
 			]
         },
         {
-            id: 'page7',
-            alignment: "left",
-            hidden: false,
-            title: 'Protected Areas and Indigenous Territories',
-            image: 'images/kwamala.jpg',
-            description: 'In the eastern Guiana Shield, a significant opportunity exists to create a transnational corridor of protected areas (<span style="font-weight: bold; color: #a5ff75;">in green</span>) and indigenous territories (<span style="font-weight: bold; color: #ffaa00;">in orange</span>) to help keep the tropical forest landscapes there intact and thriving. Along the northern border of Brazil, large areas like the Tumucumaque Indigenous Park, the Tumucumaque Mountains National Park, and the Trombetas-Mapuera Indigenous Territory are met by adjacent protected areas in neighboring French Guiana (Parc Amazonien de Guyane) and Guyana (Kanashen COCA). However, Suriname has neither designated indigenous reserves nor instituted headwater protections in the south, and will not do so until new protected areas legislation is ratified by law.',
-            location: {
-                center: [-57, 2.5],
-				zoom: 6,
-				pitch: 0
-            },
-            mapAnimation: "flyTo",
-            rotateAnimation: false,
-            callback: "",
-            onChapterEnter: [           
-				{
-                    layer: 'ti-label',
-                    opacity: 1
-                },   				
-				{
-                    layer: 'prot-label',
-                    opacity: 1
-                },                 
-				{
-                    layer: 'guianas-protectedareas-74v0na',
-                    opacity: 1
-                },
-                {
-                    layer: 'indigenousterritories-2yjnwi',
-                    opacity: 1
-                },
-                {
-                    layer: 'countries',
-                    opacity: 1
-                },
-                {
-                    layer: 'capitals',
-                    opacity: 0
-                },
-                {
-                    layer: 'majorrivers-dcf386',
-                    opacity: 0.6
-                },				
-			],
-            onChapterExit: [
-				{
-                    layer: 'ti-label',
-                    opacity: 0
-                },  				
-				{
-                    layer: 'prot-label',
-                    opacity: 0
-                },                
-				{
-                    layer: 'guianas-protectedareas-74v0na',
-                    opacity: 0
-                },
-                {
-                    layer: 'indigenousterritories-2yjnwi',
-                    opacity: 0
-                }					
-			]
-        },
-        {
             id: 'page7b',
             alignment: "left",
             hidden: false,
@@ -595,8 +595,8 @@ var config = {
             alignment: "left",
             hidden: false,
             title: 'Guyana / Kanashen: Strengthened Protection of an Indigenous Community-Owned Area',
-            image: 'images/kanashen-2.jpg',
-            description: 'To secure their future at Kanashen, the local indigenous population submitted an application for absolute title to the entire Kanashen Indigenous District, an area of 648,567 hectares constituting some 3% of the country’s landmass; this title was granted in 2004. In 2007, they decided to manage their lands, resources and culture for the purpose of conservation and socio-economic development, subsequently declaring their lands the Kanashen Community-Owned Conservation Area (KCOCA) under Guyana’s Amerindian Act of 2006.<br><br>In 2017, after many setbacks, the KCOCA was added to the nation’s protected areas system, becoming the largest protected area in the country and the only one legally possessed by indigenous people. This strengthened formal protection of the indigenous population’s lands and resources.  ',
+            image: 'images/mike-charles.jpg',
+            description: 'To secure their future at Kanashen, the local indigenous population submitted an application for absolute title to the entire Kanashen Indigenous District, an area of 648,567 hectares constituting some 3% of the country’s landmass; this title was granted in 2004. In 2007, they decided to manage their lands, resources and culture for the purpose of conservation and socio-economic development, subsequently declaring their lands the Kanashen Community-Owned Conservation Area (KCOCA) under Guyana’s Amerindian Act of 2006.<br><br>In 2017, after many setbacks, the KCOCA was added to the nation’s protected areas system, becoming the largest protected area in the country and the only one legally possessed by indigenous people. This strengthened formal protection of the indigenous population’s lands and resources.<br><br><em>Photo credit: Mike Charles</em>',
             location: {
                 center: [-58.96259, 1.70747],
 				zoom: 9,
@@ -759,8 +759,8 @@ var config = {
             alignment: "left",
             hidden: false,
             title: 'French Guiana / Camopi: A Massive Protected Area Confronts Threats, Hand in Hand with Local Communities',
-            image: 'images/kwamala.jpg',
-            description: 'French Guiana is the largest French department, and the most forested with 96% of the territory covered by mostly primary rainforest. The department has a very low population density (4/sq km), and half of its +/- 300,000 inhabitants live along the coastline or along the majestic rivers of the interior. This is also where the department’s six indigenous groups reside. Together, they number around 10,000 persons, of which 1,000 are Wayana and 500 are Wayampi.<br><br>The Parc Amazonien de Guyane, created in February 2007 in central and southern French Guiana, covers 3.4 million hectares of intact moist tropical forest in the wider Amazon basin and Guiana Shield. It is made up of a core zone (a regulated area dedicated to environmental protection) of two million hectares, and a buffer zone (a local development area adapted to and respectful of local livelihoods) of 1.4 million hectares. The park is home to five municipalities with elected local authorities and more than 20,000 inhabitants in its buffer zone, embracing Amerindian communities (Wayana, Wayampi, Teko), Maroons (Aluku) and Creoles. It is adjacent to the Brazilian Tumucumaque Mountains National Park. Recognized as a major institution of French Guiana, the park maintains close ties with local and customary authorities.',
+            image: 'images/french-guiana1.jpg',
+            description: 'French Guiana is the largest French department, and the most forested with 96% of the territory covered by mostly primary rainforest. The department has a very low population density (4/sq km), and half of its +/- 300,000 inhabitants live along the coastline or along the majestic rivers of the interior. This is also where the department’s six indigenous groups reside. Together, they number around 10,000 persons, of which 1,000 are Wayana and 500 are Wayampi.<br><br>The Parc Amazonien de Guyane, created in February 2007 in central and southern French Guiana, covers 3.4 million hectares of intact moist tropical forest in the wider Amazon basin and Guiana Shield. It is made up of a core zone (a regulated area dedicated to environmental protection) of two million hectares, and a buffer zone (a local development area adapted to and respectful of local livelihoods) of 1.4 million hectares. The park is home to five municipalities with elected local authorities and more than 20,000 inhabitants in its buffer zone, embracing Amerindian communities (Wayana, Wayampi, Teko), Maroons (Aluku) and Creoles. It is adjacent to the Brazilian Tumucumaque Mountains National Park. Recognized as a major institution of French Guiana, the park maintains close ties with local and customary authorities.<br><br><em>Photo credit: C. Berthier / Parc Amazonien de Guyane</em>',
             location: {
                 center: [-53.43738, 3.3],
 				zoom: 7,
@@ -819,8 +819,8 @@ var config = {
             alignment: "left",
             hidden: false,
             title: 'French Guiana / Camopi: A Massive Protected Area Confronts Threats, Hand in Hand with Local Communities',
-            image: 'images/kwamala.jpg',
-            description: 'In this landscape, the commune of Camopi, founded in 1969, is a good example of the region’s challenges and strengths. The population of Camopi mostly belongs to the Wayãpi and Teko indigenous groups, made up of approximately 1,800 inhabitants and 250 households. In 2007, Camopi was included within the Parc Amazonien de Guyane, based on the principle of co-management between the park and local communities.<br><br>The juxtaposition between indigenous territories and a protected area has served to confront one of the most significant threats present in this territory: illegal gold mining. In the 1980s, gold was discovered on the Camopi River. Illegal miners arrived in the area and the villages of Vila Brasil and Ilha Bela were established, facing the Camopi village on the other side of the Oyapock River. Since then, cross-border dynamics have been a challenge for the protection and management of the territory, such that ongoing control and territorial monitoring activities coordinated between the communities and the governments, hand-in-hand with opportunities for the development of sustainable productive alternatives, must continue and be strengthened.',
+            image: 'images/french-guiana2.jpg',
+            description: 'In this landscape, the commune of Camopi, founded in 1969, is a good example of the region’s challenges and strengths. The population of Camopi mostly belongs to the Wayãpi and Teko indigenous groups, made up of approximately 1,800 inhabitants and 250 households. In 2007, Camopi was included within the Parc Amazonien de Guyane, based on the principle of co-management between the park and local communities.<br><br>The juxtaposition between indigenous territories and a protected area has served to confront one of the most significant threats present in this territory: illegal gold mining. In the 1980s, gold was discovered on the Camopi River. Illegal miners arrived in the area and the villages of Vila Brasil and Ilha Bela were established, facing the Camopi village on the other side of the Oyapock River. Since then, cross-border dynamics have been a challenge for the protection and management of the territory, such that ongoing control and territorial monitoring activities coordinated between the communities and the governments, hand-in-hand with opportunities for the development of sustainable productive alternatives, must continue and be strengthened.<br><br><em>Photo credit: A. Eber / Parc Amazonien de Guyane</em>',
             location: {
                 center: [-52.33275, 3.16772],
 				zoom: 15.5,
