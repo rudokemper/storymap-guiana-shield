@@ -63,10 +63,6 @@ var config = {
                     opacity: 1
                 },
                 {
-                    layer: 'capitals',
-                    opacity: 0
-                },
-                {
                     layer: 'mapbox-terrain-rgb',
                     opacity: 0
                 },
@@ -134,11 +130,7 @@ var config = {
                 {
                     layer: 'countries',
                     opacity: 0
-                },
-                {
-                    layer: 'capitals',
-                    opacity: 0
-                },		
+                }		
 			],
             onChapterExit: [	
                 {
@@ -208,14 +200,6 @@ var config = {
                     opacity: 0.6
                 },
                 {
-                    layer: 'countries',
-                    opacity: 1
-                },
-                {
-                    layer: 'capitals',
-                    opacity: 1
-                },
-                {
                     layer: 'biomass',
                     opacity: 0.8
                 }
@@ -250,15 +234,7 @@ var config = {
 				{
                     layer: 'indigenouscommunities-0eagv0',
                     opacity: 1
-                },
-                {
-                    layer: 'countries',
-                    opacity: 1
-                },
-                {
-                    layer: 'capitals',
-                    opacity: 1
-                }	
+                }
 			],
             onChapterExit: [
 				{
