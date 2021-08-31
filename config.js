@@ -71,19 +71,11 @@ var config = {
                     opacity: 0
                 },
                 {
-                    layer: 'forest-cover-loss',
-                    opacity: 0
-                },
-                {
                     layer: 'biomass',
                     opacity: 0
                 }
 			],
             onChapterExit: [
-                {
-                    layer: 'forest-cover-loss',
-                    opacity: 0
-                },
                 {
                     layer: 'biomass',
                     opacity: 0
@@ -349,7 +341,7 @@ var config = {
             hidden: false,
             title: 'Threats Facing the Guiana Shield',
             image: 'images/gold.jpg',
-            description: 'Today, the eastern Guiana Shield is one of the few remaining unspoiled wild places on earth. Going forward, however, the outlook is uncertain and rife with risk. Private interests in extractive industries are encroaching inwards. The main threats are mining, logging, infrastructure projects like roads and dams that invariably lead to more extractive activities, and the loss of indigenous culture and self-esteem to economic and cultural pressures. Governments, international development banks, and foreign companies are the primary actors, but even some members of indigenous communities are participating. In small-scale gold mining, miners obliterate riverbanks and forests and poison the water, air, soil, and consequently the people with mercury, leaving toxic pools of sludge in their wake. Mercury poisoning causes irreversible nerve damage, brain damage, and birth defects. If mining activity continues to scale, it could unleash an unprecedented public health crisis. (The map shows mining concessions: exploration concessions are <span style="font-weight: bold; color: #ffff73;">in yellow</span>, exploitation concessions are <span style="font-weight: bold; color: #ffaa00;">in orange</span>, and unsolicited concessions are <span style="font-weight: bold; color: #d9d9d9;">in gray</span>.)',
+            description: 'Today, the eastern Guiana Shield is one of the few remaining unspoiled wild places on earth. Going forward, however, the outlook is uncertain and rife with risk. Private interests in extractive industries are encroaching inwards. The main threats are mining, logging, infrastructure projects like roads and dams that invariably lead to more extractive activities, and the loss of indigenous culture and self-esteem to economic and cultural pressures. Governments, international development banks, and foreign companies are the primary actors, but even some members of indigenous communities are participating. In small-scale gold mining, miners obliterate riverbanks and forests and poison the water, air, soil, and consequently the people with mercury, leaving toxic pools of sludge in their wake. Mercury poisoning causes irreversible nerve damage, brain damage, and birth defects. If mining activity continues to scale, it could unleash an unprecedented public health crisis. (The map shows mining concessions and forest cover loss: exploration concessions are <span style="font-weight: bold; color: #ffff73;">in yellow</span>, exploitation concessions are <span style="font-weight: bold; color: #ffaa00;">in orange</span>, and unsolicited concessions are <span style="font-weight: bold; color: #d9d9d9;">in gray</span>. Forest cover loss is <span style="font-weight: bold; color: #FF0351;">in red</span>.)',
             location: {
                 center: [-57, 2.5],
 				zoom: 6,
@@ -375,7 +367,7 @@ var config = {
                 {
                     layer: 'forest-cover-loss',
                     opacity: 1
-                }				
+                }			
 			],
             onChapterExit: [
                 {
@@ -398,7 +390,7 @@ var config = {
             hidden: false,
             title: 'The Coming Decade: Emerging Threats in the 2020s',
             image: 'images/emerging.jpg',
-            description: 'The economic crisis that many countries are currently experiencing is expressed in the deepening of an extractive economic model, focused on mining and forest logging, to which is added the construction of roads. Meanwhile, in Brazil, the Bolsonaro administration has revived discussions of major infrastructure and mining projects that would penetrate deep into the eastern Guiana Shield, with both the expansion of the BR-163 highway leading into southern Suriname and the opening of a 4.6-million-hectare mining area called RENCA.',
+            description: 'The economic crisis that many countries are currently experiencing is expressed in the deepening of an extractive economic model, focused on mining and forest logging, to which is added the construction of roads (on the map, planned roads are indicated with dashed lines <span style="font-weight: bold; color: #FF4747;">in red</span>). Meanwhile, in Brazil, the Bolsonaro administration has revived discussions of major infrastructure and mining projects that would penetrate deep into the eastern Guiana Shield, with both the expansion of the BR-163 highway leading into southern Suriname and the opening of a 4.6-million-hectare mining area called RENCA.',
             location: {
                 center: [-57, 2.5],
 				zoom: 6,
@@ -626,6 +618,10 @@ var config = {
                     layer: 'kanashen-label2 copy',
                     opacity: 1
                 },   		
+                {
+                    layer: 'forest-cover-loss',
+                    opacity: 1
+                },
 			],
             onChapterExit: [
                 {
@@ -644,6 +640,10 @@ var config = {
                     layer: 'kanashen-label2 copy',
                     opacity: 0
                 },   	
+                {
+                    layer: 'forest-cover-loss',
+                    opacity: 0
+                },
 			]
         },
         {
@@ -726,6 +726,10 @@ var config = {
                     layer: 'watersheds-suriname',
                     opacity: 0.5
                 },	
+                {
+                    layer: 'forest-cover-loss',
+                    opacity: 1
+                },
 			],
             onChapterExit: [
                 {
@@ -750,6 +754,10 @@ var config = {
                 },
                 {
                     layer: 'watersheds-suriname',
+                    opacity: 0
+                },
+                {
+                    layer: 'forest-cover-loss',
                     opacity: 0
                 },
 			]
@@ -790,6 +798,10 @@ var config = {
                     layer: 'majorrivers-dcf386',
                     opacity: 0.6
                 },		
+                {
+                    layer: 'forest-cover-loss',
+                    opacity: 1
+                },
 			],
             onChapterExit: [
                 {
@@ -810,6 +822,10 @@ var config = {
                 },
                 {
                     layer: 'majorrivers-dcf386',
+                    opacity: 0
+                },
+                {
+                    layer: 'forest-cover-loss',
                     opacity: 0
                 },
 			]
@@ -905,7 +921,11 @@ var config = {
                 {
                     layer: 'capitals',
                     opacity: 0
-                },            			
+                },       
+                {
+                    layer: 'forest-cover-loss',
+                    opacity: 1
+                },     			
 			],
             onChapterExit: [
                 {
@@ -914,6 +934,10 @@ var config = {
                 },
                 {
                     layer: 'brasil-ti-label',
+                    opacity: 0
+                },
+                {
+                    layer: 'forest-cover-loss',
                     opacity: 0
                 },
 			]
@@ -1067,7 +1091,11 @@ var config = {
 				{
                     layer: 'capitals',
                     opacity: 1
-                }	
+                },
+                {
+                    layer: 'forest-cover-loss',
+                    opacity: 1
+                },
 			],
             onChapterExit: [
 				{
@@ -1101,7 +1129,11 @@ var config = {
                 {
                     layer: 'indigenousterritories-2yjnwi',
                     opacity: 0
-                }					
+                },
+                {
+                    layer: 'forest-cover-loss',
+                    opacity: 1
+                },		
 			]
         }		
     ]

@@ -416,26 +416,10 @@
                 'id': 'biomass',
                 'type': 'raster',
                 'source': 'trees',
-                'minzoom': 4, 
+                'minzoom': 6, 
                 'maxzoom': 12,
             },
             'boundaries-1w7tpp'
-        );
-
-        map.addSource('hansen', {
-            "type": "raster",
-            "tiles": ['https://tiles.globalforestwatch.org/umd_tree_cover_loss/v1.8/tcd_30/{z}/{x}/{y}.png'],
-            "tileSize": 256
-        });
-        map.addLayer(
-            {
-                'id': 'forest-cover-loss',
-                'type': 'raster',
-                'source': 'hansen',
-                'minzoom': 5, 
-                'maxzoom': 12,
-            },
-            'roads'
         );
     
         // setup the instance, pass callback functions
