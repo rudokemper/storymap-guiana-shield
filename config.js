@@ -458,7 +458,7 @@ var config = {
             hidden: false,
             title: 'Case studies: Guyana, Suriname, French Guiana, and Brazil',
             image: '',
-            description: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/O1vLcEygA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div><br><br>Now let\'s look at four case studies in four countries of the Eastern Guiana Shield where ACT or its partners do work to improve livelihoods and support protection of the forests. How do the indigenous communities in each country face threats, and how are they taking action to improve the management of regional ecosystems and ensure the continuity of their cultures?',
+            description: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/g-O1vLcEygA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div><br><br>Now let\'s look at four case studies in four countries of the Eastern Guiana Shield where ACT or its partners do work to improve livelihoods and support protection of the forests. How do the indigenous communities in each country face threats, and how are they taking action to improve the management of regional ecosystems and ensure the continuity of their cultures?',
             location: {
                 center: [-57, 2.5],
 				zoom: 6,
