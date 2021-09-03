@@ -598,6 +598,10 @@ var config = {
                     layer: 'forest-cover-loss',
                     opacity: 1
                 },
+                {
+                    layer: 'mapbox-satellite',
+                    opacity: 0
+                }
 			],
             onChapterExit: [
                 {
@@ -620,6 +624,10 @@ var config = {
                     layer: 'forest-cover-loss',
                     opacity: 0
                 },
+                {
+                    layer: 'mapbox-satellite',
+                    opacity: 1
+                }
 			]
         },
         {
@@ -706,6 +714,10 @@ var config = {
                     layer: 'forest-cover-loss',
                     opacity: 1
                 },
+                {
+                    layer: 'mapbox-satellite',
+                    opacity: 0
+                }
 			],
             onChapterExit: [
                 {
@@ -736,6 +748,10 @@ var config = {
                     layer: 'forest-cover-loss',
                     opacity: 0
                 },
+                {
+                    layer: 'mapbox-satellite',
+                    opacity: 1
+                }
 			]
         },
         {
@@ -778,6 +794,10 @@ var config = {
                     layer: 'forest-cover-loss',
                     opacity: 1
                 },
+                {
+                    layer: 'mapbox-satellite',
+                    opacity: 0
+                }
 			],
             onChapterExit: [
                 {
@@ -804,6 +824,10 @@ var config = {
                     layer: 'forest-cover-loss',
                     opacity: 0
                 },
+                {
+                    layer: 'mapbox-satellite',
+                    opacity: 1
+                }
 			]
         },
         {
@@ -969,7 +993,11 @@ var config = {
                 {
                     layer: 'brazil-villages-label',
                     opacity: 1
-                },      	
+                },      
+                {
+                    layer: 'mapbox-satellite',
+                    opacity: 0
+                }	
 	
 			],
             onChapterExit: [
@@ -1009,6 +1037,10 @@ var config = {
                     layer: 'brazil-villages-label',
                     opacity: 0
                 },  
+                {
+                    layer: 'mapbox-satellite',
+                    opacity: 1
+                }
 
 			]
         },             	      	            	        		
