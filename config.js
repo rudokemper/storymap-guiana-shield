@@ -157,7 +157,7 @@ var config = {
             hidden: false,
             title: 'The Eastern Guiana Shield',
             image: 'images/ebbatop.jpg',
-            description: 'Along the eastern area of the Guiana Shield, there thrives a region of more than 30 million hectares of intact rainforest landscape, its ecosystems largely untouched and its vibrant indigenous cultures still active. Described as the eastern Guiana Shield, its boundaries encompass the southern reaches of Guyana, Suriname, and French Guiana, crossing into northern Brazil. This region has one of the highest rates of forest cover in the globe (with French Guiana at 95% and Suriname at 93% being among the highest in the world), houses a substantial quantity of carbon sequestration, and contains half of all of the fresh water in the entire Shield. Here, the map is showing tree biomass density <span style="font-weight: bold; color: #070CCA;">in blue</span>.',
+            description: 'Along the eastern area of the Guiana Shield, there thrives a region of more than 30 million hectares of intact rainforest landscape, its ecosystems largely untouched and its vibrant indigenous cultures still active. Described as the eastern Guiana Shield, its boundaries encompass the southern reaches of Guyana, Suriname, and French Guiana, crossing into northern Brazil. This region has one of the highest rates of forest cover in the globe (with French Guiana at 95% and Suriname at 93% being among the highest in the world), houses a substantial quantity of carbon sequestration, and contains half of all of the fresh water in the entire Shield.',
             location: {
                 center: [-57, 2.5],
 				zoom: 6,
@@ -198,17 +198,10 @@ var config = {
                 {
                     layer: 'majorrivers-dcf386',
                     opacity: 0.6
-                },
-                {
-                    layer: 'biomass',
-                    opacity: 0.8
                 }
 			],
             onChapterExit: [
-                {
-                    layer: 'biomass',
-                    opacity: 0
-                }			
+		
             ]
         },
         {

@@ -405,22 +405,6 @@
             },
             'watersheds2-26pedv'
         );
-
-        map.addSource('trees', {
-            "type": "raster",
-            "tiles": ['https://storage.googleapis.com/wri-public/biomass/global/2017/v2/30/{z}/{x}/{y}.png'],
-            "tileSize": 256
-        });
-        map.addLayer(
-            {
-                'id': 'biomass',
-                'type': 'raster',
-                'source': 'trees',
-                'minzoom': 6, 
-                'maxzoom': 12,
-            },
-            'boundaries-1w7tpp'
-        );
     
         // setup the instance, pass callback functions
         scroller
