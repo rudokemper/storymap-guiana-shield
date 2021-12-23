@@ -96,6 +96,14 @@ var config = {
             callback: "",
             onChapterEnter: [
                 {
+                    layer: 'boundaries-1w7tpp',
+                    opacity: 0.4
+                },
+                {
+                    layer: 'boundaries-1w7tpp copy',
+                    opacity: 0.4
+                },
+                {
                     layer: 'watersheds2-26pedv',
                     opacity: 0.2
 				},              	
@@ -134,10 +142,6 @@ var config = {
 			],
             onChapterExit: [	
                 {
-                    layer: 'watersheds2-26pedv',
-                    opacity: 0
-                },
-                {
                     layer: 'watersheds-amazon',
                     opacity: 0
                 },
@@ -170,18 +174,6 @@ var config = {
                 {
                     layer: 'watersheds2-26pedv',
                     opacity: 0.3
-                },
-                {
-                    layer: 'watersheds-amazon',
-                    opacity: 0
-                },
-                {
-                    layer: 'watersheds2-26pedv copy 1',
-                    opacity: 0
-                },					
-                {
-                    layer: 'watersheds2-26pedv copy 2',
-                    opacity: 0
                 },	
                 {
                     layer: 'boundaries-1w7tpp',
@@ -198,7 +190,11 @@ var config = {
                 {
                     layer: 'majorrivers-dcf386',
                     opacity: 0.6
-                }
+                },				
+                {
+                    layer: 'countries',
+                    opacity: 1
+                }	
 			],
             onChapterExit: [
 		
@@ -219,7 +215,15 @@ var config = {
             mapAnimation: "flyTo",
             rotateAnimation: false,
             callback: "",
-            onChapterEnter: [           
+            onChapterEnter: [     
+                {
+                    layer: 'boundaries-1w7tpp',
+                    opacity: 0.75
+                },
+                {
+                    layer: 'boundaries-1w7tpp copy',
+                    opacity: 0.75
+                },		    
 				{
                     layer: 'indigenous-label',
                     opacity: 1
@@ -255,41 +259,65 @@ var config = {
             mapAnimation: "flyTo",
             rotateAnimation: false,
             callback: "",
-            onChapterEnter: [           
+            onChapterEnter: [    
+                {
+                    layer: 'boundaries-1w7tpp',
+                    opacity: 0.75
+                },
+                {
+                    layer: 'boundaries-1w7tpp copy',
+                    opacity: 0.75
+                },		      
 				{
                     layer: 'ti-label',
                     opacity: 1
-                },   				
+                },  
+                {
+                    layer: 'kaxuyana-label',
+                    opacity: 1
+                },	 				
 				{
                     layer: 'prot-label',
                     opacity: 1
                 },                 
 				{
                     layer: 'guianas-protectedareas-74v0na',
-                    opacity: 1
+                    opacity: 0.6
                 },
                 {
                     layer: 'indigenousterritories-2yjnwi',
-                    opacity: 1
+                    opacity: 0.6
                 },
                 {
                     layer: 'countries',
                     opacity: 1
                 },
                 {
-                    layer: 'capitals',
+                    layer: 'majorrivers-dcf386',
+                    opacity: 0.6
+                },		
+                {
+                    layer: 'mining-5jgazy',
                     opacity: 0
                 },
                 {
-                    layer: 'majorrivers-dcf386',
-                    opacity: 0.6
-                },				
+                    layer: 'roads',
+                    opacity: 0
+                },
+                {
+                    layer: 'forest-cover-loss',
+                    opacity: 0
+                }		
 			],
             onChapterExit: [
 				{
                     layer: 'ti-label',
                     opacity: 0
-                },  				
+                },  
+                {
+                    layer: 'kaxuyana-label',
+                    opacity: 0
+                },				
 				{
                     layer: 'prot-label',
                     opacity: 0
@@ -316,7 +344,15 @@ var config = {
 				zoom: 6,
 				pitch: 0
             },
-            onChapterEnter: [           
+            onChapterEnter: [   
+                {
+                    layer: 'boundaries-1w7tpp',
+                    opacity: 0.75
+                },
+                {
+                    layer: 'boundaries-1w7tpp copy',
+                    opacity: 0.75
+                },		      
                 {
                     layer: 'mining-5jgazy',
                     opacity: 1
@@ -327,30 +363,38 @@ var config = {
                 },
                 {
                     layer: 'countries',
-                    opacity: 0
-                },
-                {
-                    layer: 'capitals',
-                    opacity: 0
+                    opacity: 1
                 },
                 {
                     layer: 'forest-cover-loss',
                     opacity: 1
-                }			
-			],
-            onChapterExit: [
+                },
                 {
-                    layer: 'mining-5jgazy',
+                    layer: 'majorrivers-dcf386',
+                    opacity: 0.6
+                },	
+                {
+                    layer: 'renca-label',
+                    opacity: 0
+                },
+				{
+                    layer: 'plannedroads-label',
                     opacity: 0
                 },
                 {
-                    layer: 'roads',
+                    layer: 'plannedroads-cikotf',
                     opacity: 0
                 },
                 {
-                    layer: 'forest-cover-loss',
+                    layer: 'special-renca-border',
                     opacity: 0
                 },				
+                {
+                    layer: 'special-renca',
+                    opacity: 0
+                },		
+			],
+            onChapterExit: [				
 			]
         },		
         {
@@ -368,7 +412,19 @@ var config = {
             mapAnimation: "flyTo",
             rotateAnimation: false,
             callback: "",
-            onChapterEnter: [           
+            onChapterEnter: [    
+                {
+                    layer: 'boundaries-1w7tpp',
+                    opacity: 0.75
+                },
+                {
+                    layer: 'boundaries-1w7tpp copy',
+                    opacity: 0.75
+                },		  
+                {
+                    layer: 'majorrivers-dcf386',
+                    opacity: 0.6
+                },	
 				{
                     layer: 'renca-label',
                     opacity: 1
@@ -399,19 +455,73 @@ var config = {
                 },		
                 {
                     layer: 'countries',
-                    opacity: 0
+                    opacity: 1
+                },
+                {
+                    layer: 'forest-cover-loss',
+                    opacity: 1
+                }				
+			],
+            onChapterExit: [			
+			]
+        },
+        {
+            id: 'page7b',
+            alignment: "left",
+            hidden: false,
+            title: 'Case studies: Guyana, Suriname, French Guiana, and Brazil',
+            image: '',
+            description: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/F43Tg2gReUI?controls=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div><br><br>Now let\'s look at four case studies in four countries of the Eastern Guiana Shield where ACT or its partners do work to improve livelihoods and support protection of the forests. How do the indigenous communities in each country face threats, and how are they taking action to improve the management of regional ecosystems and ensure the continuity of their cultures?',
+            location: {
+                center: [-57, 2.5],
+				zoom: 6,
+				pitch: 0
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [    
+                {
+                    layer: 'boundaries-1w7tpp',
+                    opacity: 0.75
+                },
+                {
+                    layer: 'boundaries-1w7tpp copy',
+                    opacity: 0.75
+                },		
+                {
+                    layer: 'boundaries-1w7tpp copy',
+                    opacity: 0.4
+                },                    
+				{
+                    layer: 'guianas-protectedareas-74v0na',
+                    opacity: 0.4
+                },
+                {
+                    layer: 'indigenousterritories-2yjnwi',
+                    opacity: 0.4
+                },
+                {
+                    layer: 'countries',
+                    opacity: 1
                 },
                 {
                     layer: 'capitals',
                     opacity: 0
                 },
                 {
-                    layer: 'forest-cover-loss',
+                    layer: 'majorrivers-dcf386',
+                    opacity: 0.6
+                },
+                {
+                    layer: 'case-studies',
                     opacity: 1
-                },				
-			],
-            onChapterExit: [
-				{
+                },
+                {
+                    layer: 'case-studies copy',
+                    opacity: 1
+                },
+                {
                     layer: 'renca-label',
                     opacity: 0
                 }, 
@@ -442,53 +552,11 @@ var config = {
                 {
                     layer: 'forest-cover-loss',
                     opacity: 0
-                },				
-			]
-        },
-        {
-            id: 'page7b',
-            alignment: "left",
-            hidden: false,
-            title: 'Case studies: Guyana, Suriname, French Guiana, and Brazil',
-            image: '',
-            description: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/F43Tg2gReUI?controls=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div><br><br>Now let\'s look at four case studies in four countries of the Eastern Guiana Shield where ACT or its partners do work to improve livelihoods and support protection of the forests. How do the indigenous communities in each country face threats, and how are they taking action to improve the management of regional ecosystems and ensure the continuity of their cultures?',
-            location: {
-                center: [-57, 2.5],
-				zoom: 6,
-				pitch: 0
-            },
-            mapAnimation: "flyTo",
-            rotateAnimation: false,
-            callback: "",
-            onChapterEnter: [                        
-				{
-                    layer: 'guianas-protectedareas-74v0na',
-                    opacity: 0.4
                 },
                 {
-                    layer: 'indigenousterritories-2yjnwi',
-                    opacity: 0.4
-                },
-                {
-                    layer: 'countries',
-                    opacity: 1
-                },
-                {
-                    layer: 'capitals',
+                    layer: 'kanashen-label2',
                     opacity: 0
-                },
-                {
-                    layer: 'majorrivers-dcf386',
-                    opacity: 0.6
-                },
-                {
-                    layer: 'case-studies',
-                    opacity: 1
-                },
-                {
-                    layer: 'case-studies copy',
-                    opacity: 1
-                },		
+                },  	
 			],
             onChapterExit: [            
 				{
@@ -506,7 +574,7 @@ var config = {
                 {
                     layer: 'case-studies copy',
                     opacity: 0
-                },						
+                }						
 			]
         },        
         {
@@ -526,6 +594,14 @@ var config = {
             callback: "",
             onChapterEnter: [     
                 {
+                    layer: 'boundaries-1w7tpp',
+                    opacity: 0.75
+                },
+                {
+                    layer: 'boundaries-1w7tpp copy',
+                    opacity: 0.75
+                },	
+                {
                     layer: 'majorrivers-dcf386',
                     opacity: 0.0
                 },   
@@ -542,11 +618,7 @@ var config = {
                 {
                     layer: 'creek-labels',
                     opacity: 0
-                },      
-                {
-                    layer: 'kanashen-label2',
-                    opacity: 0
-                },    
+                }  
             ]
             
             
@@ -567,6 +639,14 @@ var config = {
             rotateAnimation: false,
             callback: "",
             onChapterEnter: [     
+                {
+                    layer: 'boundaries-1w7tpp',
+                    opacity: 0.75
+                },
+                {
+                    layer: 'boundaries-1w7tpp copy',
+                    opacity: 0.75
+                },	
                 {
                     layer: 'majorrivers-dcf386',
                     opacity: 0.2
@@ -600,10 +680,6 @@ var config = {
                 {
                     layer: 'kanashen-label',
                     opacity: 0
-                },  
-                {
-                    layer: 'kanashen-label2',
-                    opacity: 0
                 },   
                 {
                     layer: 'kanashen-label2 copy',
@@ -621,7 +697,7 @@ var config = {
             hidden: false,
             title: 'Suriname / Kwamalasamutu: The Trio People Towards Autonomous and Sustainable Management of Territory',
             image: '',
-            description: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/7JF-iqb_di4?controls=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div><br><br>The Trio (or Tarëno in Suriname, and Tïrïyo in Brazil) are a small indigenous group living in the border area of Suriname and Brazil.  The Trio group in Suriname consists of a conglomeration of analogous subgroups and distinct Amerindian groups. Up to 12-15 subtribes can be found at a given time in and around the village of Kwamalasamutu. Kwamalasamutu is the home of the paramount chief of the Trios – Granman Asongo Alalaparu – and is also the village with the largest population (600-800 people).<br><br>While Suriname is the last country in South America without land rights, recent threats are emerging to the land of the Trios such as a road intruding the western part of their area, and the granting of new mining concessions for gold and diamonds in the deep south.',
+            description: '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/7JF-iqb_di4?controls=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div><br><br>The Trio (or Tarëno in Suriname, and Tïrïyo in Brazil) are a small indigenous group living in the border area of Suriname and Brazil.  The Trio group in Suriname consists of a conglomeration of analogous subgroups and distinct Amerindian groups. Up to 12-15 subtribes can be found at a given time in and around the village of Kwamalasamutu. Kwamalasamutu is the home of the paramount chief of the Trios – Granman Jimmy Toeroemang – and is also the village with the largest population (600-800 people).<br><br>While Suriname is the last country in South America without land rights, recent threats are emerging to the land of the Trios such as a road intruding the western part of their area, and the granting of new mining concessions for gold and diamonds in the deep south.',
             location: {
                 center: [-56.78993, 2.35534],
 				zoom: 15.5,
@@ -631,6 +707,14 @@ var config = {
             rotateAnimation: false,
             callback: "",
             onChapterEnter: [   
+                {
+                    layer: 'boundaries-1w7tpp',
+                    opacity: 0.75
+                },
+                {
+                    layer: 'boundaries-1w7tpp copy',
+                    opacity: 0.75
+                },	
                 {
                     layer: 'majorrivers-dcf386',
                     opacity: 0.0
@@ -642,7 +726,15 @@ var config = {
                 {
                     layer: 'kwamalasamutu-label',
                     opacity: 1
-                },          			
+                },       
+                {
+                    layer: 'kanashen-label2',
+                    opacity: 0
+                }, 
+                {
+                    layer: 'countries',
+                    opacity: 0
+                },    			
 			],
             onChapterExit: [
                 {
@@ -672,6 +764,14 @@ var config = {
             callback: "",
             onChapterEnter: [   
                 {
+                    layer: 'boundaries-1w7tpp',
+                    opacity: 0.75
+                },
+                {
+                    layer: 'boundaries-1w7tpp copy',
+                    opacity: 0.75
+                },	
+                {
                     layer: 'suriname-villages',
                     opacity: 1
                 },  
@@ -699,14 +799,14 @@ var config = {
                     layer: 'forest-cover-loss',
                     opacity: 1
                 },
+                {
+                    layer: 'countries',
+                    opacity: 1
+                }
 			],
             onChapterExit: [
                 {
                     layer: 'suriname-villages',
-                    opacity: 0
-                },
-                {
-                    layer: 'kwamalasamutu-label',
                     opacity: 0
                 },  
                 {
@@ -746,18 +846,26 @@ var config = {
             mapAnimation: "flyTo",
             rotateAnimation: false,
             callback: "",
-            onChapterEnter: [    
+            onChapterEnter: [  
+                {
+                    layer: 'boundaries-1w7tpp',
+                    opacity: 0.75
+                },
+                {
+                    layer: 'boundaries-1w7tpp copy',
+                    opacity: 0.75
+                },	  
                 {
                     layer: 'parc-amazonien-label',
                     opacity: 1
                 },  
                 {
                     layer: 'parc-amazonien',
-                    opacity: 1
+                    opacity: 0.7
                 },  
                 {
                     layer: 'parc-amazonien-TI',
-                    opacity: 1
+                    opacity: 0.7
                 },                  
                 {
                     layer: 'majorrivers-dcf386 copy',
@@ -769,6 +877,18 @@ var config = {
                 },		
                 {
                     layer: 'forest-cover-loss',
+                    opacity: 1
+                },
+                {
+                    layer: 'kwamalasamutu-label',
+                    opacity: 0
+                }, 
+                {
+                    layer: 'capitals',
+                    opacity: 0
+                },	
+                {
+                    layer: 'countries',
                     opacity: 1
                 },
 			],
@@ -792,11 +912,7 @@ var config = {
                 {
                     layer: 'majorrivers-dcf386',
                     opacity: 0
-                },
-                {
-                    layer: 'forest-cover-loss',
-                    opacity: 0
-                },
+                }
 			]
         },
         {
@@ -815,6 +931,14 @@ var config = {
             rotateAnimation: false,
             callback: "",
             onChapterEnter: [     
+                {
+                    layer: 'boundaries-1w7tpp',
+                    opacity: 0.75
+                },
+                {
+                    layer: 'boundaries-1w7tpp copy',
+                    opacity: 0.75
+                },	
                 {
                     layer: 'camopi',
                     opacity: 1
@@ -838,7 +962,55 @@ var config = {
                 {
                     layer: 'creek-labels copy',
                     opacity: 1
-                },      	
+                },    
+                {
+                    layer: 'forest-cover-loss',
+                    opacity: 0
+                },
+                {
+                    layer: 'brasil-ti',
+                    opacity: 0
+                },
+                {
+                    layer: 'brasil-ti-label',
+                    opacity: 0
+                }, 
+                {
+                    layer: 'brazil-rivers',
+                    opacity: 0
+                },   
+                {
+                    layer: 'kaxuyana-label',
+                    opacity: 0
+                },
+                {
+                    layer: 'brazil-rivers-label',
+                    opacity: 0
+                },  
+                {
+                    layer: 'brazil-villages',
+                    opacity: 0
+                },    
+                {         
+                    layer: 'brazil-villages copy',
+                    opacity: 0
+                }, 
+                {
+                    layer: 'brazil-villages-stroke',
+                    opacity: 0
+                },    
+                {         
+                    layer: 'brazil-villages-stroke copy',
+                    opacity: 0
+                },        	
+                {
+                    layer: 'brazil-villages-label',
+                    opacity: 0
+                },  
+                {
+                    layer: 'countries',
+                    opacity: 0
+                },
 			],
             onChapterExit: [
                 {
@@ -872,6 +1044,14 @@ var config = {
             callback: "",
             onChapterEnter: [
                 {
+                    layer: 'boundaries-1w7tpp',
+                    opacity: 0.75
+                },
+                {
+                    layer: 'boundaries-1w7tpp copy',
+                    opacity: 0.75
+                },	
+                {
                     layer: 'majorrivers-dcf386',
                     opacity: 0.6
                 },        
@@ -888,92 +1068,21 @@ var config = {
                     opacity: 1
                 },       
                 {
+                    layer: 'kaxuyana-label',
+                    opacity: 1
+                },
+                {
+                    layer: 'countries',
+                    opacity: 1
+                },
+                {
                     layer: 'capitals',
-                    opacity: 0
-                },       
+                    opacity: 1
+                },	
                 {
                     layer: 'forest-cover-loss',
                     opacity: 1
-                },     			
-			],
-            onChapterExit: [
-                {
-                    layer: 'brasil-ti',
-                    opacity: 0
-                },
-                {
-                    layer: 'brasil-ti-label',
-                    opacity: 0
-                },
-                {
-                    layer: 'forest-cover-loss',
-                    opacity: 0
-                },
-			]
-        },	      
-        {
-            id: 'page15',
-            alignment: "left",
-            hidden: false,
-            title: 'Brazil / Tumucumaque: Multi-Ethnic Efforts to Protect a Common Territory',
-            image: 'images/tumucumaque-2.jpg',
-            description: 'The Trio (known as the Tiriyó in Portuguese) and Wayana people officially occupy the contiguous Tumucumaque and Paru D’Este Indigenous Territories, which together embrace more than four million hectares. They are represented respectively by the associations APITIKATXI (on behalf of the Tiriyó, Katxuyana and Txikyana communities of the villages along the Rio Paru D’Oeste) and APIWA (on behalf of the Wayana/Waiana and Apalai communities of the villages along the Rio Paru D’Este).<br><br>The potential threats that would be brought about by the territories’ connectiveness to the road system and the ongoing illegal goldmining are combatted by a strong Environmental & Territorial Management Plan (PGTA in the Portuguese acronym) and a prior consultation protocol (similar to an FPIC protocol), are being formulated and implemented jointly by the different ethnic groups that inhabit them. The illegal gold threat is affecting both the protected areas and the indigenous territories, poisoning the rivers and the people. In this respect, coordination between the PGTA and the management plans of the contiguous protected areas is a requirement for the protection of this landscape.<br><br>With the objective of supporting indigenous peoples in their efforts to secure and exercise their rights, as a strategy to confront the threats to their lands and cultures, ACT-Brasil has been working with these two grassroots organizations, providing legal advice with respect to their rights to health, education and territorial safeguards from the state. Additionally, ACT-Brasil is supporting the process of strengthening indigenous traditional health practices in this region. To this end, ACT-Brasil promotes an intercultural dialogue between indigenous healers and the official health agencies, seeking greater integration of indigenous health knowledge within the western healthcare systems responsible for delivering healthcare to indigenous peoples in the Tumucumaque region.<br><br><em>Photo credit: Evandro Benardi</em>',
-            location: {
-                center: [-55.85246, 1.34850],
-				zoom: 7.85,
-				pitch: 0
-            },
-            mapAnimation: "flyTo",
-            rotateAnimation: false,
-            callback: "",
-            onChapterEnter: [    
-                {
-                    layer: 'brasil-ti',
-                    opacity: 1
-                },
-                {
-                    layer: 'brasil-ti-label',
-                    opacity: 1
-                }, 
-                {
-                    layer: 'brazil-rivers',
-                    opacity: 1
-                },   
-                {
-                    layer: 'brazil-rivers-label',
-                    opacity: 1
-                },   
-                {
-                    layer: 'brazil-villages',
-                    opacity: 1
-                },    
-                {         
-                    layer: 'brazil-villages copy',
-                    opacity: 1
-                },  
-                {
-                    layer: 'brazil-villages-stroke',
-                    opacity: 1
-                },    
-                {         
-                    layer: 'brazil-villages-stroke copy',
-                    opacity: 1
-                },                        	
-                {
-                    layer: 'brazil-villages-label',
-                    opacity: 1
-                },      	
-	
-			],
-            onChapterExit: [
-                {
-                    layer: 'brasil-ti',
-                    opacity: 0
-                },
-                {
-                    layer: 'brasil-ti-label',
-                    opacity: 0
-                }, 
+                },     
                 {
                     layer: 'brazil-rivers',
                     opacity: 0
@@ -1001,8 +1110,82 @@ var config = {
                 {
                     layer: 'brazil-villages-label',
                     opacity: 0
+                }			
+			],
+            onChapterExit: [
+			]
+        },	      
+        {
+            id: 'page15',
+            alignment: "left",
+            hidden: false,
+            title: 'Brazil / Tumucumaque: Multi-Ethnic Efforts to Protect a Common Territory',
+            image: 'images/tumucumaque-2.jpg',
+            description: 'The Trio (known as the Tiriyó in Portuguese) and Wayana people officially occupy the contiguous Tumucumaque and Paru D’Este Indigenous Territories, which together embrace more than four million hectares. They are represented respectively by the associations APITIKATXI (on behalf of the Tiriyó, Katxuyana and Txikyana communities of the villages along the Rio Paru D’Oeste) and APIWA (on behalf of the Wayana/Waiana and Apalai communities of the villages along the Rio Paru D’Este).<br><br>The potential threats that would be brought about by the territories’ connectiveness to the road system and the ongoing illegal goldmining are combatted by a strong Environmental & Territorial Management Plan (PGTA in the Portuguese acronym) and a prior consultation protocol (similar to an FPIC protocol), are being formulated and implemented jointly by the different ethnic groups that inhabit them. The illegal gold threat is affecting both the protected areas and the indigenous territories, poisoning the rivers and the people. In this respect, coordination between the PGTA and the management plans of the contiguous protected areas is a requirement for the protection of this landscape.<br><br>With the objective of supporting indigenous peoples in their efforts to secure and exercise their rights, as a strategy to confront the threats to their lands and cultures, ACT-Brasil has been working with these two grassroots organizations, providing legal advice with respect to their rights to health, education and territorial safeguards from the state. Additionally, ACT-Brasil is supporting the process of strengthening indigenous traditional health practices in this region. To this end, ACT-Brasil promotes an intercultural dialogue between indigenous healers and the official health agencies, seeking greater integration of indigenous health knowledge within the western healthcare systems responsible for delivering healthcare to indigenous peoples in the Tumucumaque region.<br><br><em>Photo credit: Evandro Benardi</em>',
+            location: {
+                center: [-55.85246, 1.34850],
+				zoom: 7.85,
+				pitch: 0
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [  
+                {
+                    layer: 'boundaries-1w7tpp',
+                    opacity: 0.75
+                },
+                {
+                    layer: 'boundaries-1w7tpp copy',
+                    opacity: 0.75
+                },	  
+                {
+                    layer: 'brasil-ti',
+                    opacity: 1
+                },
+                {
+                    layer: 'brasil-ti-label',
+                    opacity: 1
+                }, 
+                {
+                    layer: 'kaxuyana-label',
+                    opacity: 1
+                },
+                {
+                    layer: 'brazil-rivers',
+                    opacity: 1
+                },   
+                {
+                    layer: 'brazil-rivers-label',
+                    opacity: 1
+                },   
+                {
+                    layer: 'brazil-villages',
+                    opacity: 1
+                },    
+                {         
+                    layer: 'brazil-villages copy',
+                    opacity: 1
                 },  
-
+                {
+                    layer: 'brazil-villages-stroke',
+                    opacity: 1
+                },    
+                {         
+                    layer: 'brazil-villages-stroke copy',
+                    opacity: 1
+                },                        	
+                {
+                    layer: 'brazil-villages-label',
+                    opacity: 1
+                },   
+                {
+                    layer: 'forest-cover-loss',
+                    opacity: 1
+                },   	
+	
+			],
+            onChapterExit: [
 			]
         },             	      	            	        		
         {
@@ -1020,11 +1203,23 @@ var config = {
             mapAnimation: "flyTo",
             rotateAnimation: false,
             callback: "",
-            onChapterEnter: [           
+            onChapterEnter: [     
+                {
+                    layer: 'boundaries-1w7tpp',
+                    opacity: 0.75
+                },
+                {
+                    layer: 'boundaries-1w7tpp copy',
+                    opacity: 0.75
+                },	      
 				{
                     layer: 'ti-label',
                     opacity: 1
-                },   				
+                },   	
+                {
+                    layer: 'kaxuyana-label 2',
+                    opacity: 1
+                },				
 				{
                     layer: 'prot-label',
                     opacity: 1
@@ -1057,20 +1252,64 @@ var config = {
                     layer: 'countries',
                     opacity: 1
                 },
-				{
+                {
                     layer: 'capitals',
-                    opacity: 1
+                    opacity: 0
                 },
                 {
                     layer: 'forest-cover-loss',
                     opacity: 1
                 },
+                {
+                    layer: 'brasil-ti',
+                    opacity: 0
+                },
+                {
+                    layer: 'brasil-ti-label',
+                    opacity: 0
+                }, 
+                {
+                    layer: 'brazil-rivers',
+                    opacity: 0
+                },   
+                {
+                    layer: 'kaxuyana-label',
+                    opacity: 0
+                },
+                {
+                    layer: 'brazil-rivers-label',
+                    opacity: 0
+                },  
+                {
+                    layer: 'brazil-villages',
+                    opacity: 0
+                },    
+                {         
+                    layer: 'brazil-villages copy',
+                    opacity: 0
+                }, 
+                {
+                    layer: 'brazil-villages-stroke',
+                    opacity: 0
+                },    
+                {         
+                    layer: 'brazil-villages-stroke copy',
+                    opacity: 0
+                },        	
+                {
+                    layer: 'brazil-villages-label',
+                    opacity: 0
+                }
 			],
             onChapterExit: [
 				{
                     layer: 'ti-label',
                     opacity: 0
-                },   				
+                },   	
+                {
+                    layer: 'kaxuyana-label 2',
+                    opacity: 0
+                },				
 				{
                     layer: 'prot-label',
                     opacity: 0
@@ -1098,11 +1337,7 @@ var config = {
                 {
                     layer: 'indigenousterritories-2yjnwi',
                     opacity: 0
-                },
-                {
-                    layer: 'forest-cover-loss',
-                    opacity: 1
-                },		
+                }		
 			]
         }		
     ]
