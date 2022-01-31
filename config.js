@@ -241,7 +241,7 @@ var config = {
 				{
                     layer: 'indigenouscommunities-0eagv0',
                     opacity: 0
-                }		
+                },		
 			]
         },
         {
@@ -250,7 +250,7 @@ var config = {
             hidden: false,
             title: 'Protected Areas and Indigenous Territories',
             image: 'images/camopi.jpg',
-            description: 'In the eastern Guiana Shield, significant parts of the forests have been designated either as protected areas (<span style="font-weight: bold; color: #a5ff75;">in green</span>) or indigenous territories (<span style="font-weight: bold; color: #ffaa00;">in orange</span>). Along the northern border of Brazil, large areas like the Tumucumaque Indigenous Park, the Tumucumaque Mountains National Park, and the Trombetas-Mapuera Indigenous Territory are met by adjacent protected areas in neighboring French Guiana (Parc Amazonien de Guyane) and Guyana (Kanashen COCA). However, Suriname has neither designated indigenous reserves nor instituted headwater protections in the south, and will not do so until new protected areas legislation is ratified by law.<br><br><em>Photo credit: C. Berthier / Parc Amazonien de Guyane</em>',
+            description: 'In the eastern Guiana Shield, significant parts of the forests have been designated either as protected areas (<span style="font-weight: bold; color: #a5ff75;">in green</span>) or indigenous territories (<span style="font-weight: bold; color: #ffaa00;">in orange</span>). Along the northern border of Brazil, large areas like the Tumucumaque Indigenous Park, the Tumucumaque Mountains National Park, and the Trombetas-Mapuera Indigenous Territory are met by adjacent protected areas in neighboring French Guiana (Parc Amazonien de Guyane) and Guyana (Kanashen COCA, in <span style="font-weight: bold; color: #d2d53b;">in yellow</span>). However, Suriname has neither designated indigenous reserves nor instituted headwater protections in the south, and will not do so until new protected areas legislation is ratified by law.<br><br><em>Photo credit: C. Berthier / Parc Amazonien de Guyane</em>',
             location: {
                 center: [-57, 2.5],
 				zoom: 6,
@@ -286,6 +286,10 @@ var config = {
                 },
                 {
                     layer: 'indigenousterritories-2yjnwi',
+                    opacity: 0.6
+                },
+                {
+                    layer: 'kanashen',
                     opacity: 0.6
                 },
                 {
@@ -329,7 +333,11 @@ var config = {
                 {
                     layer: 'indigenousterritories-2yjnwi',
                     opacity: 0
-                }					
+                },
+                {
+                    layer: 'kanashen',
+                    opacity: 0.0
+                },				
 			]
         },
         {
@@ -502,6 +510,10 @@ var config = {
                     opacity: 0.4
                 },
                 {
+                    layer: 'kanashen',
+                    opacity: 0.4
+                },
+                {
                     layer: 'countries',
                     opacity: 1
                 },
@@ -565,6 +577,10 @@ var config = {
                 },
                 {
                     layer: 'indigenousterritories-2yjnwi',
+                    opacity: 0
+                },
+                {
+                    layer: 'kanashen',
                     opacity: 0
                 },
                 {
@@ -1249,6 +1265,10 @@ var config = {
                     opacity: 1
                 },
                 {
+                    layer: 'kanashen',
+                    opacity: 1
+                },
+                {
                     layer: 'countries',
                     opacity: 1
                 },
@@ -1337,7 +1357,11 @@ var config = {
                 {
                     layer: 'indigenousterritories-2yjnwi',
                     opacity: 0
-                }		
+                },
+                {
+                    layer: 'kanashen',
+                    opacity: 0
+                },
 			]
         }		
     ]
